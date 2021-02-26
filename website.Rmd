@@ -311,7 +311,32 @@ This Linkage Project was funded by the Australian Research Council (LP160100031)
 <button class="accordion">Recommendations</button>
 <div class="panel">
 <p></p>
-see [Pojani et al. (2019). Setting the agenda for parking research...](https://www.elsevier.com/books/parking/pojani/978-0-12-815265-2)
+While parking research remains limited and fragmented, innovations in parking practice are occurring quietly across a wide variety of fronts that include technology, public policy, and design. The aim is to recapture some of the urban space that kept reserved for the periodic storage of immobile vehicles. 
+
+The project findings suggest that the predict and provide approach is failing for parking and the legacy is parking over-supply, traffic congestion, limitless demand for road-widening, and entrenched expectations for abundant and convenient parking. This outdated planning approach can be replaced by more innovative approaches such as multimodalism, transit-oriented development (TOD), and travel demand management (TDM). Parking policy can be a potent tool for influencing modal choices by incorporating the following recommendations: 
+
+* The planning- and policy-focus can be broadened from the local- to metropolitan-scale to reduce policy inequality and to improve coordination between local councils. Metropolitan-regions require comprehensive parking strategies. 
+
+*	Demand management approaches that are consistent along rapid transit lines and within inner-cities can minimise parking abuse, excessive cruising, and false claims for public parking space. 
+
+*	Multimodalism and TDM can be complementary by investing infrastructure that ensures (1) active transport is convenient, pleasant, and safe; and (2) public transit has road priority, is rapid, affordable, frequent, and reliable. 
+
+*	Dwelling and parking purchases can be unbundled at locations where active and public transit is most to improve housing affordability, reveal the hidden costs of parking, and clarify how many, if any, private vehicles are necessary for the household. 
+
+*	New residential developments with car-sharing and drop-off bays can provide the flexibility and convenience of cars without household burdens including private vehicle purchases, interest rates, insurance, maintenances, depreciation, and off-street storage. This also prepares new residential development for a future where ride-hailing and autonomous vehicles become commonplace.
+
+*	Access to urban environments can be selectively restricted to discourage unnecessary private vehicles and parking demand, and to prioritise shared mobility services and efficient pick-up/drop-off zones. 
+
+*	Parking permits and demand responsive parking meters that reflect the market rate of public parking space enable motorists to make informed decisions about their model choices and their road and parking demands, and ensures that taxpayers are no longer subsidising the private decision to drive.
+
+*	Parking fines can be set sufficiently high and relative to the enforcement rate to discourage motorists from gambling with public parking rather than pay for commercial parking. 
+
+*	Directing greater attention to commuters that reside between rapid transit corridors can ensure that they are not required to wade through the same traffic congestion irrespective of whether they are driving their private vehicle or riding public transit. Providing priority lanes for public transit services to access rapid transit is one solution.
+
+*	Overall, high parking requirements are unnecessary and a household burden at locations where walking, cycling, and rapid public transit are viable alternatives. 
+
+On the research front, we urge researchers to avoid examining land use and transport in isolation, and to prioritise interdisciplinary collaborations since this can broaden the theoretical frameworks and the methodologies available and generate novel research insights. 
+
 <p></p>
 </div>
 
@@ -1852,9 +1877,7 @@ ggplotly(p1, tooltip = c("percent", "text")) %>%
   plotly::layout(yaxis = y)
 ```
 
-### Visitor Perceptions Bubble Alternative
-
-```{r bubbles_test}
+```{r bubbles_test, include=FALSE}
 f <- list(
   family = "Arial",
   size = 15,
