@@ -120,7 +120,7 @@ print("All the necessary objects are being read into the environment.")
     print(file)
     assign(gsub(".RData", "",file),
            readRDS(paste("./../outputs", file, sep = "/")))
-    }
+  }
 
 SA2 <- SA2_shape %>%
   st_as_sf() %>% 
@@ -236,15 +236,16 @@ Column {data-width=1}
 -----------------------------------------------------------------------
 
 ###
-
-<center><a href="https://www.elsevier.com/books/parking/pojani/978-0-12-815265-2" target="_blank"><img src="../data/book_cover.jpg" style="width:100%"/></a></center>
+```{r book_img, fig.cap="***Fig. 1 Parking: an International Perspective (Pojani et al. [2019  ](https://www.elsevier.com/books/parking/pojani/978-0-12-815265-2))***", fig.asp=1.2}
+include_graphics("../data/book_cover.jpg")
+```
 
 Column {data-width=2}
 -----------------------------------------------------------------------
 
 ###
 <p></p>
-A significant portion of metropolitan land is allocated for parking private vehicles, which could be regarded an *unproductive* use of public, commercial, and private urban space given estimates that private vehicles are stationary 95% of the time (Button [2006]( https://www.sciencedirect.com/science/article/pii/S0967070X06000436)) and four parking bays exist for every registered private vehicle (Cullinane, Smith, and Green [2004]( https://deepblue.lib.umich.edu/bitstream/handle/2027.42/87990/102765.pdf?sequence=1); Jakle and Sculle [2004]( https://books.google.com.au/books?hl=en&lr=&id=bV622ieCXakC&oi=fnd&pg=PP15&ots=cm-Dnd2ToO&sig=5upxqYTiHqwdo_amjBKMMlHdmnk&redir_esc=y#v=onepage&q&f=false)). While unknown for Australia, Europe has an estimated 30,000 km^2^ of land allocated for parking and the United States 27,000 km^2^ with much of this parking located on valuable inner city land (Inci [2015](https://www.sciencedirect.com/science/article/pii/S2212012214000562)). Indeed, the cost of parking space can at times exceed the motor vehicle itself such as Sydney residential parking bays listed for 495,000AUD and auctioning for 120,000AUD (CarAdvice [2018](https://www.9news.com.au/motoring/sydney-car-parking-space-up-for-sale-for-almost-half-a-million/3d59cc98-2c8f-4d21-995b-6689cbd136cb)). This suggests that the public purchase off on-street and off-street parking has been immense and is essentially the public subsiding the private privilege to drive and park.
+A significant portion of metropolitan land is allocated for parking private vehicles, which could be regarded an *unproductive* use of public, commercial, and private urban space given estimates that private vehicles are stationary 95% of the time (Button [2006]( https://www.sciencedirect.com/science/article/pii/S0967070X06000436)) and four parking bays exist for every registered private vehicle (Cullinane, Smith, and Green [2004]( https://deepblue.lib.umich.edu/bitstream/handle/2027.42/87990/102765.pdf?sequence=1); Jakle and Sculle [2004]( https://books.google.com.au/books?hl=en&lr=&id=bV622ieCXakC&oi=fnd&pg=PP15&ots=cm-Dnd2ToO&sig=5upxqYTiHqwdo_amjBKMMlHdmnk&redir_esc=y#v=onepage&q&f=false)). While unknown for Australia, Europe has an estimated 30,000 km^2^ of land allocated for parking and the United States 27,000 km^2^ with much of this parking located on valuable inner city land (Inci [2015](https://www.sciencedirect.com/science/article/pii/S2212012214000562)). Indeed, the cost of parking space can at times exceed the motor vehicle itself such as Sydney residential parking bays listed for AUD495,000 and auctioning for AUD120,000 (CarAdvice [2018](https://www.9news.com.au/motoring/sydney-car-parking-space-up-for-sale-for-almost-half-a-million/3d59cc98-2c8f-4d21-995b-6689cbd136cb)). This suggests that the public purchase off on-street and off-street parking has been immense and is essentially the public subsiding the private privilege to drive and park.
 While most cities have already been transformed to accommodate private vehicles that are stationary, the future of metropolitan parking is uncertain given:
 
 * declines in driving (e.g. fewer vehicle kilometres travelled; younger generations delaying they gain a drivers licence and purchase a private vehicle);
@@ -313,7 +314,7 @@ This Linkage Project was funded by the Australian Research Council (LP160100031)
 <p></p>
 While parking research remains limited and fragmented, innovations in parking practice are occurring quietly across a wide variety of fronts that include technology, public policy, and design. The aim is to recapture some of the urban space that kept reserved for the periodic storage of immobile vehicles. 
 
-The project findings suggest that the predict and provide approach is failing for parking and the legacy is parking over-supply, traffic congestion, limitless demand for road-widening, and entrenched expectations for abundant and convenient parking. This outdated planning approach can be replaced by more innovative approaches such as multimodalism, transit-oriented development (TOD), and travel demand management (TDM). Parking policy can be a potent tool for influencing modal choices by incorporating the following recommendations: 
+The project findings suggest that the predict and provide approach is failing for parking and the legacy is parking over-supply, traffic congestion, limitless demand for road-widening, and entrenched expectations for abundant and convenient parking. This outdated planning approach can be replaced by more innovative approaches such as multimodalism (i.e., encouraging commuters to trip chain between private, public and active transport modes), transit-oriented development (TOD; i.e., minimising the need for private cars and parking space by concentrating residential development within walkable range of rapid transit nodes), and travel demand management (TDM; reducing the availability of parking and therefore the appeal of driving relative to the alternatives such as active and public transport). Parking policy can be a potent tool for influencing modal choices by incorporating the following recommendations: 
 
 * The planning- and policy-focus can be broadened from the local- to metropolitan-scale to reduce policy inequality and to improve coordination between local councils. Metropolitan-regions require comprehensive parking strategies. 
 
@@ -393,12 +394,12 @@ Column {data-width=1}
 -----------------------------------------------------------------------
 
 ###
-```{r protest_img, fig.cap="Development Protest Sign in Alphington, Australia (Taylor [2014  ](http://dx.doi.org/10.1080/14649357.2014.929727))", fig.asp=1.2}
+```{r protest_img, fig.cap="***Fig. 1 Development Protest Sign in Alphington, Australia (Taylor [2014  ](http://dx.doi.org/10.1080/14649357.2014.929727))***", fig.asp=1.2}
 include_graphics("../data/save_this_carpark.jpg")
 ```
 
 ###
-```{r cycleway_img, fig.cap="Legally-Parked Car Preventing Cycleway Completion (Quest Newspapers [2016  ](https://www.couriermail.com.au/questnews/southeast/brisbane-city-council-worker-allegedly-parks-on-yellow-no-parking-line-at-wynnum-rd-wynnum-west/news-story/5ce052f5a0a10309a8390b3186ff8ce5))", fig.asp=1.2}
+```{r cycleway_img, fig.cap="***Fig. 2 Legally-Parked Car Preventing Cycleway Completion (Quest Newspapers [2016  ](https://www.couriermail.com.au/questnews/southeast/brisbane-city-council-worker-allegedly-parks-on-yellow-no-parking-line-at-wynnum-rd-wynnum-west/news-story/5ce052f5a0a10309a8390b3186ff8ce5))***", fig.asp=1.2}
 include_graphics("../data/ute_walker.jpg")
 ```
 
@@ -436,10 +437,13 @@ See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for 
 <button class="accordion">Parking Demand</button>
 <div class="panel">
 <p></p>
-As previously discussed, parking demand is potentially limitless given that increasing parking supply also increases the convenience and appeal of driving. The Australian Bureau of Statistics’ (ABS) Census of Population and Housing ([2011; 2016](https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks)) reveals 2011, 2016, and changes between for inner Brisbane, Sydney, and Melbourne residential private vehicle ownership at the SA1-level and the workers arriving by private vehicles at the SA2-level (see Figure 1 below). With this data, it is possible to estimate residential off street parking demand and inner city worker parking demand (see Table 1).
-<center><img src="../data/inner_city_pop.png" width="600" /> </center>
-<center><b><i>Figure 1. Inner city residential (SA1) and worker (SA2) populations</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+As previously discussed, parking demand is potentially limitless given that increasing parking supply also increases the convenience and appeal of driving. The Australian Bureau of Statistics’ (ABS) Census of Population and Housing ([2011; 2016](https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks)) reveals 2011, 2016, and changes between for inner Brisbane, Sydney, and Melbourne residential private vehicle ownership at the SA1-level and the workers arriving by private vehicles at the SA2-level (see Figure 3 below). With this data, it is possible to estimate residential off street parking demand and inner city worker parking demand (see Table 1).
 
+<center><img src="../data/inner_city_pop.png" width="600" /> </center>
+<center><b><i>Fig. 3 Inner city residential (SA1) and worker (SA2) populations</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+<p></p>
+<p></p>
+<p></p>
 <center><b><i>Table 1. Inner city parking demand</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
 ```{r DemandTable}
 df1 <- read.csv("./../data/Demand.csv")
@@ -485,10 +489,10 @@ Table 2 reveals that on average, parking supply exceeds dwelling supply as liste
 
 <p></p>
 <center><img src="../data/figure1.png" width="500" /> </center>
-<center><b><i>Figure 2. average parking per dwelling on approved development applications</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+<center><b><i>Figure 4. average parking per dwelling on approved development applications</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
 <p></p>
 
-Figure 2 further highlights the distinction between inner Brisbane and the remaining inner cities given that just 6 out of 61 inner Brisbane development applications are located below the y-line at 1 that signifies “unbundled parking” since there is not enough parking for every dwelling. Notably, the BCC inner city frame is predominately zoned by a *parking maximums* policy that restricts parking supply to 1 bay per 1 or 2 bedroom dwelling. As such, having the majority of approved development applications located above the y-line located at one suggest either weak policy enforcement or that majority of residential development features at least 3 bedrooms which raised the parking maximums above 1. In contrast, 46 out of 49 inner Sydney development applications, and 30 out of 42 for inner Melbourne development applications are located below the y-line located at 1 thus suggesting that these cities are stronger enforcers of parking maximums, and so parking can be purchased as required rather than as mandated by traditional *parking minimums*. In sum, inner Brisbane’s recent parking supply rate exceeds the inner Sydney and Melbourne by a large margin which may explain earlier findings that vehicle ownership and driving to work are on the rise from inner Brisbane.
+In the Figure 4 violin plot located above, each dot represents a development application and colour and grouping along the x-axis reveals indicates source of the development application. The position along the y-axis reveals the average number of parking bays per multiunit development application (i.e., parking bays listed on the development application divided by the dwellings listed on the development application) and the diamond represents the mean value for a given city. The outline is a kernel-smoothed representation of these distributions and the y-line located at 1.0 is the threshold by which point there are fewer/ more parking bays than dwellings that provides an unambiguous indicator of parking maximum policies. This figure highlights the distinction between inner Brisbane and the remaining inner cities given that just 6 out of 61 inner Brisbane development applications are located below the y-line at 1 that signifies “unbundled parking” since there is not enough parking for every dwelling. Notably, the BCC inner city frame is predominately zoned by a *parking maximums* policy that restricts parking supply to 1 bay per 1 or 2 bedroom dwelling. As such, having the majority of approved development applications located above the y-line located at one suggest either weak policy enforcement or that majority of residential development features at least 3 bedrooms which raised the parking maximums above 1. In contrast, 46 out of 49 inner Sydney development applications, and 30 out of 42 for inner Melbourne development applications are located below the y-line located at 1 thus suggesting that these cities are stronger enforcers of parking maximums, and so parking can be purchased as required rather than as mandated by traditional *parking minimums*. In sum, inner Brisbane’s recent parking supply rate exceeds the inner Sydney and Melbourne by a large margin which may explain earlier findings that vehicle ownership and driving to work are on the rise from inner Brisbane.
 
 Having examined the recent parking supply *rate* for residential development, turning to Table 3 reveals the *known* parking supply for comparability with the typical US city. Notably, the inner Melbourne census is used to impute data absent from the inner Sydney census and inner Brisbane sample given that inner Melbourne is the only city that measures area and counts parking bays.
 
@@ -518,10 +522,10 @@ See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for 
 <button class="accordion">Parking Management</button>
 <div class="panel">
 <p></p>
-Given that parking demand is potentially limitless, councils are switching increasing from the *predict and provide* approach towards a *demand management* approach to parking to ensure that the user pays at least portion of the cost for parking. While *paid parking* and *parking fines* are frequently interpreted as “revenue raising” by councils in media (e.g. Hurst [2010](https://www.brisbanetimes.com.au/national/queensland/a-fine-way-to-raise-27-million-20100609-xwae.html); O’Sullivan and Gladstone [2019]( https://www.smh.com.au/national/nsw/parking-fines-reap-sydney-councils-650m-in-four-years-20190912-p52qll.html); or Becker [2020]( https://9now.nine.com.au/a-current-affair/coronavirus-melbourne-parking-inspectors-still-handing-out-infringements-as-city-enters-stage-four-covid19-restrictions/f87adc4d-74a0-465a-9917-4f1e9b79aee8)), which is an interpretation that disregards the public cost and value of urban *space* purchased for storing private transport while it is immobile and therefore unproductive. Further, this interpretation assumes that individuals have an intrinsic right to driving and convenient parking rather than the reality that driving is one of many *modal choices* available within metropolitan areas. Table 1 reveals how much inner Brisbane, Sydney, and Melbourne motorists are paying for their parking.
+Given that parking demand is potentially limitless, councils are switching increasingly from the *predict and provide* approach towards a *demand management* approach to parking to ensure that the user pays at least portion of the cost for parking. While *paid parking* and *parking fines* are frequently interpreted as “revenue raising” by councils in media (e.g. Hurst [2010](https://www.brisbanetimes.com.au/national/queensland/a-fine-way-to-raise-27-million-20100609-xwae.html); O’Sullivan and Gladstone [2019]( https://www.smh.com.au/national/nsw/parking-fines-reap-sydney-councils-650m-in-four-years-20190912-p52qll.html); or Becker [2020]( https://9now.nine.com.au/a-current-affair/coronavirus-melbourne-parking-inspectors-still-handing-out-infringements-as-city-enters-stage-four-covid19-restrictions/f87adc4d-74a0-465a-9917-4f1e9b79aee8)), which is an interpretation that disregards the public cost and value of urban *space* purchased for storing private transport while it is immobile and therefore unproductive. Further, this interpretation assumes that individuals have an intrinsic right to driving and convenient parking rather than the reality that driving is one of many *modal choices* available within metropolitan areas. Table 1 reveals how much inner Brisbane, Sydney, and Melbourne motorists are paying for their parking.
 
 <p></p>
-<center><b><i>Table 4. average inner city parking prices</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+<center><b><i>Table 4. Average inner city parking prices</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
 ```{r PricingTable}
 df1 <- read.csv("./../data/Pricing.csv")
 names(df1) <- c("", "Brisbane",	"Sydney",	"Melbourne")
@@ -553,34 +557,8 @@ Column {data-width=1}
 
 ###
 
-```{r zoning_img, fig.cap="Brisbane City Council zoning for parking maximums ([BCC 2014  ](https://cityplan.brisbane.qld.gov.au/eplan/#Rules/0/193/1/4358/0))", fig.asp=1.2}
+```{r zoning_img, fig.cap="***Fig. 1 Brisbane City Council zoning for parking maximums ([BCC 2014  ](https://cityplan.brisbane.qld.gov.au/eplan/#Rules/0/193/1/4358/0))***", out.width="100%"}
 include_graphics("../data/bcc_core_frame.png")
-```
-
-### 
-```{r supply_img, fig.asp=1}
-tmap_mode("view")
-
-sf1 <- inner_cities_bris %>% 
-  transmute(lab = "City Frame")
-
-tm <- tm_shape(SA2_bris, name = "Suburbs (2016 SA2)", bbox = inner_cities_bris) +
-    tm_polygons(col = "one_bedroom_2016",
-            title = "vehicles per 1 bedroom dwelling",
-            style = "cont",
-            alpha = 0.8,
-            border.alpha = 0.8,
-            palette = "Reds",
-            colorNA = "grey") +
-    tm_shape(sf1, name = "Inner City Frame") +
-    tm_borders(col = "black", lwd = 2) +
-    tm_text(text = "lab", col = "black", size = 2, fontface="bold") +
-    tm_basemap(providers$Stamen.TonerLite, group = "Roads", alpha = 0.4) +
-    tm_basemap(providers$OpenRailwayMap, group = "Rail", alpha = 0.8) +
-    tm_basemap(providers$Esri.WorldImagery, group = "Image", alpha = 1) +
-    tm_view(dot.size.fixed = TRUE, symbol.size.fixed = TRUE)
-
-tmap_leaflet(tm)
 ```
 
 Column {data-width=2}
@@ -588,11 +566,11 @@ Column {data-width=2}
 
 ###
 <p></p>
-Planning policy and particularly parking policy can be a potent tool for influencing modal choice given parking determines *when*, *where*, and *whether* driving is a convenient and cost-effective modal choice (Manville [2017]( https://www.scopus.com/record/display.uri?eid=2-s2.0-85008462136&origin=inward)). Notably, land use policy is typically the domain of local councils while transport policy is typically the domain of state government. As a consequence, metropolitan land use planning is often fragmented between multiple local councils and so *policy inequalities* can emerge. For example, an outer city council may introduce a Transit Orientated Development (TOD) policy to concentrate residential development within a walkable range of rapid public transport nodes while an inner city local government may introduce a parking minimums policy to increase inner city parking supply and attract commerce (Young and Miles [2015]( https://www.sciencedirect.com/science/article/pii/S2213624X14000297)). In this scenario, the inner city council is undermining the outer city council’s attempt to encourage commuters to park ‘n’ ride by increasing the convenience of parking in the inner city. While poor coordination between councils can emerge as fragment land use planning when the metropolitan system is considered, policy inequalities also emerge between the local land use authorities and the state transport authority given that the state often is relegated to a *responsive role* to the fragmented land use planning rather than *prescriptive* role of developing an efficient metropolitan transport system (Barter [2015](https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740)).
+Planning policy and particularly parking policy can be a potent tool for influencing modal choice given parking determines *when*, *where*, and *whether* driving is a convenient and cost-effective modal choice (Manville [2017]( https://www.scopus.com/record/display.uri?eid=2-s2.0-85008462136&origin=inward)). Notably, land use policy is typically the domain of local councils while transport policy is typically the domain of state government. As a consequence, metropolitan land use planning is often fragmented between multiple local councils and so *policy inequalities* can emerge. For example, an outer city council may introduce a Transit Orientated Development (TOD) policy to concentrate residential development within a walkable range of rapid public transport nodes while an inner city local government may introduce a parking minimums policy to increase inner city parking supply and attract commerce (Young and Miles [2015]( https://www.sciencedirect.com/science/article/pii/S2213624X14000297)). In this scenario, the inner city council is undermining the outer city council's attempt to encourage commuters to park ‘n’ ride by increasing the convenience of parking in the inner city. While poor coordination between councils can emerge as fragment land use planning when the metropolitan system is considered, policy inequalities also emerge between the local land use authorities and the state transport authority given that the state often is relegated to a *responsive role* to the fragmented land use planning rather than *prescriptive* role of developing an efficient metropolitan transport system (Barter [2015](https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740)).
 
-Parking policy can occupy a complex policy space wedge between council land use policies and the state transport policies yet it is a potent policy space given that private transport journeys begin and end in parking. Practitioners and policy makers will typically adopt one of three distinct planning approaches to parking: (1) ‘predict and provide’, (2) ‘multimodalism’, or (3) ‘demand management’ and these planning approaches can be arranged along a pragmatist-radical continuum according to its potential to *agitate* or *appease* the voters of elected leaders (Shoup [2011]( https://web.archive.org/web/20170224033309/http://shoup.bol.ucla.edu/Chapter1.pdf); Table 5).
+Parking policy can occupy a complex policy space wedge between council land use policies and the state transport policies yet it is a potent policy space given that private transport journeys begin and end in parking. Practitioners and policy makers will typically adopt one of three distinct planning approaches to parking: (1) ‘predict and provide’, (2) ‘multimodalism’, or (3) ‘demand management’ and these planning approaches can be arranged along a pragmatist-radical continuum according to its potential to *agitate* or *appease* the voters of elected leaders (Shoup [2011]( https://web.archive.org/web/20170224033309/http://shoup.bol.ucla.edu/Chapter1.pdf); Table 1).
 
-<center><b><i>Table 5. A comparative framework of urban mobility organised by planning orientation, approach, and intended modal choice</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+<center><b><i>Table 1. A comparative framework of urban mobility organised by planning orientation, approach, and intended modal choice</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
 
 ```{r PolicyAimsTable}
 df1 <- read.csv("./../data/PolicyAims.csv")
@@ -605,15 +583,15 @@ kable(df1) %>%
   row_spec(0, bold = T)
 ```
 
-See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
+See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
 
 <button class="accordion">Predict & Provide</button>
 <div class="panel">
 <p></p>
 
-The predict and provide planning approach has dominated parking planning for at least the last fifty years (Goulden, Ryley, and Dingwall [2014](https://www.sciencedirect.com/science/article/pii/S0967070X14000213)). It is particularly *pragmatic* in that it accepts that some if not most commuters already reside within auto-dependent locations (i.e. where private automobiles are necessary) and avoids agitating the public by *predicting* parking demand, and *providing* parking accordingly. Providing entails ensuring there is enough parking at home, work, and regularly visited locations (e.g. supermarkets and services) so that all private transport arriving during the peak-demand period could feasibly park off street (i.e. ‘parking self-containment’). The aim is to prevent parking *overflow* into public on street parking and neighbouring off street parking, which can become a source of social conflict. Further, the aim is to provide *enough* parking so that a portion of parking remains vacant to minimise cruising periods that will slow all trailing traffic (Seibert [2008](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/2008-winter/24-2-2008-christian-seibert.pdf)). Barter ( [2015](https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740); Table 6) adds that the ‘mindsets’ of parking providers can vary according to whether they regard parking as a *market good* (e.g. the user pays for the modal choice and its parking requirements) or *public infrastructure* (e.g. parking is market failure yet a universal right so the government must intervene), and whether they intend to manage parking at the site or district level.
+The predict and provide planning approach has dominated parking planning for at least the last fifty years (Goulden, Ryley, and Dingwall [2014](https://www.sciencedirect.com/science/article/pii/S0967070X14000213)). It is particularly *pragmatic* in that it accepts that some if not most commuters already reside within auto-dependent locations (i.e. where private automobiles are necessary) and avoids agitating the public by *predicting* parking demand, and *providing* parking accordingly. Providing entails ensuring there is enough parking at home, work, and regularly visited locations (e.g. supermarkets and services) so that all private transport arriving during the peak-demand period could feasibly park off street (i.e. ‘parking self-containment’). The aim is to prevent parking *overflow* into public on street parking and neighbouring off street parking, which can become a source of social conflict. Further, the aim is to provide *enough* parking so that a portion of parking remains vacant to minimise cruising periods that will slow all trailing traffic (Seibert [2008](https://www.cis.org.au/app/uploads/2015/04/images/stories/policy-magazine/2008-winter/24-2-2008-christian-seibert.pdf)). Barter ([2015](https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740); Table 2) adds that the ‘mindsets’ of parking providers can vary according to whether they regard parking as a *market good* (e.g. the user pays for the modal choice and its parking requirements) or *public infrastructure* (e.g. parking is market failure yet a universal right so the government must intervene), and whether they intend to manage parking at the site or district level.
 
-<center><b><i>Table 6. three parking-based mindsets </i></b> (from Barter<a href="https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740">2015</a>)</center>
+<center><b><i>Table 2. Three parking-based mindsets </i></b> (from Barter <a href="https://www.tandfonline.com/doi/full/10.1080/12265934.2014.927740">2015</a>)</center>
 
 ```{r MindsetTable}
 df1 <- read.csv("./../data/Mindsets.csv")
@@ -628,9 +606,9 @@ kable(df1) %>%
 <p></p>
 
 Specific predict and provide approaches can include ensuring parking is provided at destinations so that *private transport* is a viable modal choice. This approach the most likely to appease the public since they will not encounter the *first mile* problem of reaching public transport from their home or encounter the *last mile* problem of reaching their destination from their last public transport stop. Another specific predict and provide approach can include providing enough *direct public transport* coverage so that public transport provides efficiency and convenience that is comparable to private transport. Unfortunately for sprawling cities that have prioritised private transport for decades, the public expense of providing a comprehensive public transport network throughout suburbia and regular services to provide convenience comparable to private transport can be financially infeasible. As such, compromises need to be made which can leave many with the first and last mile problems of public transport and so private transport retains its greater appeal.    
-Predict and provide policies will typically specify *parking minimums* that developers must fulfil to ensure that all predicted vehicles predicted to arrive during peak demand periods can park on site (Shoup [1999](https://www.sciencedirect.com/science/article/pii/S0965856499000075)). For example, the 2014 Brisbane City Plan (Brisbane City Council [2014]( https://cityplan.brisbane.qld.gov.au/eplan/#Rules/0/274/1/14207/0)) specifies parking minimums that require: bars to have at least 6 parking bays per 100 m2 gross floor area; hospitals at least 0.5 parking bays per bed and 0.8 per staff member; and district parks to have between 10 and 20 parking bays. Critics argue that the *calibration* of parking minimums typically lacks a rigorous evidence base (Andersson [2016](https://www.sciencedirect.com/science/article/pii/S0967070X16302232); Shoup [1999](https://www.sciencedirect.com/science/article/pii/S0965856499000075); Millard-Ball [2015](https://www.jtlu.org/index.php/jtlu/article/view/384)) and is generally the *ad nauseam* reproduction of the US Institute of Transportation Engineers’ 1987 *Trip Generation Manual* adjusted for local land use definitions (Shoup [2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000448)). Further, each parking bay needs to be scaled to accommodate the largest domestic vehicle size, which has resulted in parking oversupply in terms of the urban space it consumes. Marsden ( [2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000412)) adds that *parking minimums* frequently burdened households with surplus parking by failing to discriminate between those: (a) intending to own multiple private vehicles; (b) choosing live auto-free; or (c) unable to afford a private vehicle. This may explain the recent rise of ‘bay sharing’ services (e.g. Parkhound and Kerb) that enable car-free households to recuperate at least a portion of this economic burden (see Kimpton and colleagues forthcoming chapter in *The Guide to the Modern Sharing Economy*).
+Predict and provide policies will typically specify *parking minimums* that developers must fulfil to ensure that all predicted vehicles predicted to arrive during peak demand periods can park on site (Shoup [1999](https://www.sciencedirect.com/science/article/pii/S0965856499000075)). For example, the 2014 Brisbane City Plan (Brisbane City Council [2014]( https://cityplan.brisbane.qld.gov.au/eplan/#Rules/0/274/1/14207/0)) specifies parking minimums that require: bars to have at least 6 parking bays per 100 m2 gross floor area; hospitals at least 0.5 parking bays per bed and 0.8 per staff member; and district parks to have between 10 and 20 parking bays. Critics argue that the *calibration* of parking minimums typically lacks a rigorous evidence base (Andersson [2016](https://www.sciencedirect.com/science/article/pii/S0967070X16302232); Shoup [1999](https://www.sciencedirect.com/science/article/pii/S0965856499000075); Millard-Ball [2015](https://www.jtlu.org/index.php/jtlu/article/view/384)) and is generally the *ad nauseam* reproduction of the US Institute of Transportation Engineers’ 1987 *Trip Generation Manual* adjusted for local land use definitions (Shoup [2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000448)). Further, each parking bay needs to be scaled to accommodate the largest domestic vehicle size, which has resulted in parking oversupply in terms of the urban space it consumes. Marsden ([2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000412)) adds that *parking minimums* frequently burdened households with surplus parking by failing to discriminate between those: (a) intending to own multiple private vehicles; (b) choosing live auto-free; or (c) unable to afford a private vehicle. This may explain the recent rise of ‘bay sharing’ services (e.g. Parkhound and Kerb) that enable car-free households to recuperate at least a portion of this economic burden (see Kimpton and colleagues forthcoming chapter in *The Guide to the Modern Sharing Economy*).
 
-See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
+See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
 <p></p>
 </div>
 
@@ -638,17 +616,17 @@ See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for
 <div class="panel">
 <p></p>
 
-Relative to predict and provide, a *multimodalism* planning approach is *radical* since it prioritises *rapid public transport* before *direct public transport* or *private transport* that can travel more direct routes thus there is greater potential for agitating the public (Table 5). Notably, this planning approach also shares some *pragmatist* leanings since it accepts that some already reside within low-density residential areas where their private vehicles are a convenient, flexible, and generally unimpeded modal choice. As such, the overarching multimodalism aim is to minimise *route redundancy* between motorists by sharing public transport and in so doing, reducing their collective demands for road capacity. By minimising route redundancy, this will also reduce their collective demands for expensive inner city parking space and collective Vehicle Kilometres Travelled (VKT) thus minimising the environmental impacts of urban mobility (Kimpton et al. [2020a](https://doi.org/10.1016/j.progress.2020.100506)). Notably, multimodalism approaches typically prioritise rapid public transport because although accessing this rapid services can impose lateral travel toward the destination, rapid public transport can be an appealing modal choice by providing commuters with priority pathways past inner city traffic congestion (e.g. Bus Rapid Transit, ferries routes, and train tracks; Ison and Mulley [2014](https://books.google.com.au/books?hl=en&lr=&id=uP5lBAAAQBAJ&oi=fnd&pg=PP1&ots=qABLnNLSZl&sig=-GPy9F42ntCBVei4Kr-SQGh5kys&redir_esc=y#v=onepage&q&f=false); Parkhurst and Meek [2014](https://www-emerald-com.ezproxy.library.uq.edu.au/insight/content/doi/10.1108/S2044-994120140000005020/full/html); Meek et al. [2011](https://www.sciencedirect.com/science/article/pii/S0967070X10001150)). 
+Relative to predict and provide, a *multimodalism* planning approach is *radical* since it prioritises *rapid public transport* before *direct public transport* or *private transport* that can travel more direct routes thus there is greater potential for agitating the public (Table 1). Notably, this planning approach also shares some *pragmatist* leanings since it accepts that some already reside within low-density residential areas where their private vehicles are a convenient, flexible, and generally unimpeded modal choice. As such, the overarching multimodalism aim is to minimise *route redundancy* between motorists by sharing public transport and in so doing, reducing their collective demands for road capacity. By minimising route redundancy, this will also reduce their collective demands for expensive inner city parking space and collective Vehicle Kilometres Travelled (VKT) thus minimising the environmental impacts of urban mobility (Kimpton et al. [2020a](https://doi.org/10.1016/j.progress.2020.100506)). Notably, multimodalism approaches typically prioritise rapid public transport because although accessing this rapid services can impose lateral travel toward the destination, rapid public transport can be an appealing modal choice by providing commuters with priority pathways past inner city traffic congestion (e.g. Bus Rapid Transit, ferries routes, and train tracks; Ison and Mulley [2014](https://books.google.com.au/books?hl=en&lr=&id=uP5lBAAAQBAJ&oi=fnd&pg=PP1&ots=qABLnNLSZl&sig=-GPy9F42ntCBVei4Kr-SQGh5kys&redir_esc=y#v=onepage&q&f=false); Parkhurst and Meek [2014](https://www-emerald-com.ezproxy.library.uq.edu.au/insight/content/doi/10.1108/S2044-994120140000005020/full/html); Meek et al. [2011](https://www.sciencedirect.com/science/article/pii/S0967070X10001150)). 
 
-Specific multimodalism approaches can include the more pragmatic *intermodal* approach where parking (e.g., park ‘n’ rides) and/or drop off lanes (e.g., kiss ‘n’ rides) are provided at rapid transit nodes so that private transport can solve the first mile problem of public transport. In contrast, specific approaches such as the more radical *transmodal* approach require commuters to use *feeder public transport* to reach the rapid transit node. The advantage of feeder public transport for service providers is that these services can loop in greater frequency and avoid becoming locked within inner city traffic congestion. In contrast, feeder public transport may be relatively unappealing to those owning a car given that each additional *link* in a public transport journey introduces uncertainties and the amount *slack time* required each day in the event of service delays (Kimpton [2020b](https://www.sciencedirect.com/science/article/pii/S0264837719306246); Figure 1).
+Specific multimodalism approaches can include the more pragmatic *intermodal* approach where parking (e.g., park ‘n’ rides) and/or drop off lanes (e.g., kiss ‘n’ rides) are provided at rapid transit nodes so that private transport can solve the first mile problem of public transport. In contrast, specific approaches such as the more radical *transmodal* approach require commuters to use *feeder public transport* to reach the rapid transit node. The advantage of feeder public transport for service providers is that these services can loop in greater frequency and avoid becoming locked within inner city traffic congestion. In contrast, feeder public transport may be relatively unappealing to those owning a car given that each additional *link* in a public transport journey introduces uncertainties and the amount *slack time* required each day in the event of service delays (Kimpton [2020b](https://www.sciencedirect.com/science/article/pii/S0264837719306246); Figure 2).
 
 <center><img src="../data/Slack.png" width="600" /> </center>
 
-<center><b><i>Figure 3. a framework of modal choice and reliability</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/J.LANDUSEPOL.2019.104304">2020</a>)</center>
+<center><b><i>Figure 2. Framework of modal choice and reliability</i></b> (from Kimpton et al. <a href="https://doi.org/10.1016/J.LANDUSEPOL.2019.104304">2020</a>)</center>
 <p></p>
-For example, *capacity unreliability* is the potential for parking lots and public transport to be fully occupied upon arrival, *travel time unreliability* is the variability of public transport travel (e.g. accidents, breakdowns, traffic congestion, road works etc.), and *connectivity unreliability* is missed connections on account of the previous unreliabilities and result in further delays. Notably, public transport typically travels along a fixed route while private transport can be re-routed around obstacles and public transport is particularly vulnerable obstacles and introducing uncertainties. Last, it is notable that multimodalism approaches do not necessarily address the last mile problem of traveling from the rapid transit terminal to the destination given that public transport is involved, and so the magnitude of this problem can determine who chooses private transport and who chooses the intended *intermodal* or *transmodal* travel behaviours.
+For example, *capacity unreliability* is the potential for parking lots and public transport to be fully occupied upon arrival, *travel time unreliability* is the variability of public transport travel (e.g. accidents, breakdowns, traffic congestion, road works etc.), and *connectivity unreliability* is missed connections on account of the previous unreliabilities and result in further delays. Notably, public transport typically travels along a fixed route while private transport can be re-routed around obstacles and public transport is particularly vulnerable obstacles and introducing uncertainties. Last, it is notable that multimodalism approaches do not necessarily address the last mile problem of travelling from the rapid transit terminal to the destination given that public transport is involved, and so the magnitude of this problem can determine who chooses private transport and who chooses the intended *intermodal* or *transmodal* travel behaviours.
 
-See Kimpton et al. ( [2020a](https://doi.org/10.1016/j.progress.2020.100506); [ 2020b](https://doi.org/10.1016/J.LANDUSEPOL.2019.104304) and Kimpton [2019](https://doi.org/10.1177/0308518X19890871);
+See Kimpton et al. ([2020a](https://doi.org/10.1016/j.progress.2020.100506); [ 2020b](https://doi.org/10.1016/J.LANDUSEPOL.2019.104304) and Kimpton [2019](https://doi.org/10.1177/0308518X19890871);
 [2020](https://doi.org/10.1007/s12061-020-09361-4)) for further reading. 
 <p></p>
 </div>
@@ -659,9 +637,9 @@ See Kimpton et al. ( [2020a](https://doi.org/10.1016/j.progress.2020.100506); [ 
 
 Although the predict and provide approach remains the default parking approach in most urban settings, the *demand management* is steadily gaining popularity with researchers, practitioners, and policy makers raising concerns that demand for road capacity and parking are *potentially limitless*. Further, there is an expanding acceptance that active and public transport can minimise road capacity requirements and parking demand at popular locations where urban space is typically most expensive. The demand management approach is more *radical* than the predict and provide and the multimodalism approaches given that access to better urban mobility is requires relocating into higher urban density to keep active and public transport economically viable. As such, the lifestyle change this entails has greater potential to agitate the voting public that is *unable* or *unwilling* depart from their suburban lifestyle and the convenience and flexibility of private transport.
 
-Specific demand management approaches include the *transit orientated* approach that concentrate residential development within walkable distance of rapid public transport nodes. A “walkable distance” is typically regarded somewhere between 250 and 800 meters (Singh et al. [2017]( https://www.sciencedirect.com/science/article/pii/S0967070X16302505)), and generally resembles either single-node, multi-node, or corridor Transit Orientated Development (TOD) patterns (Table 7; Pojani and Stead [2016](https://www.scopus.com/record/display.uri?eid=2-s2.0-84994865493&origin=inward)). Within these walkable neighbourhoods, private transport is unnecessary for solving the first mile problem of accessing rapid public transport although it is notable that the last mile problem remains. In contrast, specific approaches such as the *24-hour city* approach concentrates residential and commercial development within walkable distance so residents may reside, shop, and work within the same neighbourhood. Through walkable and human-scale development, the aim is for public transport—or moreover motorised transport—to be unnecessary for most residents. This specific approach is particularly *radical* given that requiring the public to move away from suburbia and near their workplace to improve their urban mobility has the greatest potential for agitating the public.
+Specific demand management approaches include the *transit orientated* approach that concentrate residential development within walkable distance of rapid public transport nodes. A “walkable distance” is typically regarded somewhere between 250 and 800 meters (Singh et al. [2017]( https://www.sciencedirect.com/science/article/pii/S0967070X16302505)), and generally resembles either single-node, multi-node, or corridor Transit Orientated Development (TOD) patterns (Table 3; Pojani and Stead [2016](https://www.scopus.com/record/display.uri?eid=2-s2.0-84994865493&origin=inward)). Within these walkable neighbourhoods, private transport is unnecessary for solving the first mile problem of accessing rapid public transport although it is notable that the last mile problem remains. In contrast, specific approaches such as the *24-hour city* approach concentrates residential and commercial development within walkable distance so residents may reside, shop, and work within the same neighbourhood. Through walkable and human-scale development, the aim is for public transport—or moreover motorised transport—to be unnecessary for most residents. This specific approach is particularly *radical* given that requiring the public to move away from suburbia and near their workplace to improve their urban mobility has the greatest potential for agitating the public.
 <p></p>
-<center><b><i>Table 7. types of Transit Orientated Development </i></b> (Pojani and Stead <a href="https://www.scopus.com/record/display.uri?eid=2-s2.0-84994865493&origin=inward">2016</a>)</center>
+<center><b><i>Table 3. types of Transit Orientated Development </i></b> (Pojani and Stead <a href="https://www.scopus.com/record/display.uri?eid=2-s2.0-84994865493&origin=inward">2016</a>)</center>
 ```{r TODTypesTable}
 df1 <- read.csv("./../data/TodType.csv")
 names(df1) <- c("TOD Type", "Characteristics")
@@ -673,13 +651,13 @@ kable(df1) %>%
   row_spec(0, bold = T)
 ```
 <p></p>
-Demand management policies typically specify *parking restrictions* (e.g. parking signs, meters, and permits) and *parking maximums* policies (e.g. 1 or fewer parking spaces per dwelling) so that active and public transport gain greater appeal and convenience over private transport. Parking restrictions can be a controversial approach for councils since approach is frequently interpreted as “revenue raising” (e.g. Hurst [2010](https://www.brisbanetimes.com.au/national/queensland/a-fine-way-to-raise-27-million-20100609-xwae.html); O’Sullivan and Gladstone [2019]( https://www.smh.com.au/national/nsw/parking-fines-reap-sydney-councils-650m-in-four-years-20190912-p52qll.html); or Becker [2020](https://9now.nine.com.au/a-current-affair/coronavirus-melbourne-parking-inspectors-still-handing-out-infringements-as-city-enters-stage-four-covid19-restrictions/f87adc4d-74a0-465a-9917-4f1e9b79aee8)). On one Australian occasion, a councillor was attacked from behind at a public forum for introducing parking meters, and an intervening councillor was almost strangled by an enraged trader fearing that the meters reduce their customers (ABC News [2015]( https://www.abc.net.au/news/2015-11-18/punches-thrown-in-dispute-over-yarraville-parking-meters/6950128)). If their customers started visiting traders away from parking meters, then this would be an example of policy inequality however if parking meters are introduced everywhere, then presumably all traders can anticipate greater parking turnover and the resultant flow of customers. Given the knee-jerk reactions to parking restrictions, Shoup ([2018]( https://www.dropbox.com/s/6tg317xssltiddp/ParkingAndTheCity.pdf?dl=0)) advises councils to directly reinvest parking revenue into nearby amenities and streetscapes so that parking restrictions can be palatable for local stakeholders. There have been multiple approaches to paid parking restrictions including increasing rates near popular destinations to disperse parking demand into nearby low demand areas (Arnott and Rowse [1999](https://www.sciencedirect.com/science/article/pii/S0094119098920848)) and increasing the initial rate to encourage longer stays to minimise turnover, cruising, and manoeuvring associated with short stays and generates congestion (Glazer and Niskanen 1992). Also, Shoup’s ( [2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000448)) demand-responsive parking is rapidly gaining popularity since parking meters are digitally linked and calibrated for a market equilibrium that keeps 20% parking vacancy on a given street. While this approach forces individuals to competitively bid for parking and therefore could potentially exclude the poorest household from high demand areas, it is notable that this 20% vacancy market equilibrium has reduced the average parking rate by 5% (Pierce and Shoup [2013]( https://www.tandfonline.com/doi/full/10.1080/01944363.2013.787307)) while also dispersing parking demand away from popular destinations and reducing cruising for parking. Interestingly, Los Angeles, CA introduced an employee cash out policy where employees can request the annual value of their workplace parking in lieu of receiving workplace parking, which is increasing car-pooling and public transport ridership within workplaces (Christiansen et al. [2017]( https://www.sciencedirect.com/science/article/pii/S2352146517306737)).
+Demand management policies typically specify *parking restrictions* (e.g. parking signs, meters, and permits) and *parking maximums* policies (e.g. 1 or fewer parking spaces per dwelling) so that active and public transport gain greater appeal and convenience over private transport. Parking restrictions can be a controversial approach for councils since approach is frequently interpreted as “revenue raising” (e.g. Hurst [2010](https://www.brisbanetimes.com.au/national/queensland/a-fine-way-to-raise-27-million-20100609-xwae.html); O’Sullivan and Gladstone [2019]( https://www.smh.com.au/national/nsw/parking-fines-reap-sydney-councils-650m-in-four-years-20190912-p52qll.html); or Becker [2020](https://9now.nine.com.au/a-current-affair/coronavirus-melbourne-parking-inspectors-still-handing-out-infringements-as-city-enters-stage-four-covid19-restrictions/f87adc4d-74a0-465a-9917-4f1e9b79aee8)). On one Australian occasion, a councillor was attacked from behind at a public forum for introducing parking meters, and an intervening councillor was almost strangled by an enraged trader fearing that the meters reduce their customers (ABC News [2015]( https://www.abc.net.au/news/2015-11-18/punches-thrown-in-dispute-over-yarraville-parking-meters/6950128)). If their customers started visiting traders away from parking meters, then this would be an example of policy inequality however if parking meters are introduced everywhere, then presumably all traders can anticipate greater parking turnover and the resultant flow of customers. Given the knee-jerk reactions to parking restrictions, Shoup ([2018]( https://www.dropbox.com/s/6tg317xssltiddp/ParkingAndTheCity.pdf?dl=0)) advises councils to directly reinvest parking revenue into nearby amenities and streetscapes so that parking restrictions can be palatable for local stakeholders. There have been multiple approaches to paid parking restrictions including increasing rates near popular destinations to disperse parking demand into nearby low demand areas (Arnott and Rowse [1999](https://www.sciencedirect.com/science/article/pii/S0094119098920848)) and increasing the initial rate to encourage longer stays to minimise turnover, cruising, and manoeuvring associated with short stays and generates congestion (Glazer and Niskanen 1992). Also, Shoup’s ([2006](https://www.sciencedirect.com/science/article/pii/S0967070X06000448)) demand-responsive parking is rapidly gaining popularity since parking meters are digitally linked and calibrated for a market equilibrium that keeps 20% parking vacancy on a given street. While this approach forces individuals to competitively bid for parking and therefore could potentially exclude the poorest household from high demand areas, it is notable that this 20% vacancy market equilibrium has reduced the average parking rate by 5% (Pierce and Shoup [2013]( https://www.tandfonline.com/doi/full/10.1080/01944363.2013.787307)) while also dispersing parking demand away from popular destinations and reducing cruising for parking. Interestingly, Los Angeles, CA introduced an employee cash out policy where employees can request the annual value of their workplace parking in lieu of receiving workplace parking, which is increasing car-pooling and public transport ridership within workplaces (Christiansen et al. [2017]( https://www.sciencedirect.com/science/article/pii/S2352146517306737)).
 
 Demand management policies that specify parking maximums are intended to reduce the number of household cars (e.g. 1 parking space maximum per dwelling) or to *unbundle* parking from land purchases (e.g. 0.8 parking spaces per dwelling) so that parking can be purchased separately and as *needed* (Martens [2005]( http://www.transportation.org.il/sites/default/files/pirsum/martens-2005---effects-of-restrictive-parking-policy_0.pdf); Guo and Ren [2013]( https://journals.sagepub.com/doi/10.1177/0042098012460735)). In this sense, unbundled parking exposes the market value of parking space so that households are better-informed when deciding about *how many or if any* private vehicles are a rational choice. Despite this intention, guest and public on street parking often enable residents to circumvent this demand management approach, and so this resultant *parking overspill* frequently becomes a source of body corporate and public conflict (Taylor [2014](http://dx.doi.org/10.1080/14649357.2014.929727)). As such, parking restrictions and parking maximums need to carefully coordinated to avoid policy inequality and social conflict.
 
 Parking maximums zones are typically located in the inner city and at TOD yet cities including Buffalo City, NY, and Mexico City are among the first to introduce blanket polices that span the cities and reduce the potential for policy inequalities (Poon 2017; Schmitt 2017). Interestingly, Zurich has capped the city’s overall parking supply to the 1990 parking supply (McCahill and Garrick [2014]( https://www.emerald.com/insight/content/doi/10.1108/S2044-994120140000005017/full/html)), and San Francisco, CA introduced *parking minimums* for shared vehicle services where *parking maximums* apply so that residents giving up private vehicles retain access to the convenience and flexibility of driving (Ter Schure, Napolitan, and Hutchinson [2012](https://journals.sagepub.com/doi/10.3141/2319-11)).  
 
-See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
+See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
 <p></p>
 </div>
 
@@ -687,10 +665,10 @@ See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for
 <div class="panel">
 <p></p>
 
-As the multimodalism and demand management approaches gain popularity, practitioners and policy makers are left with the challenge of coordinating multiple approaches to ensure they are improving urban mobility at the metropolitan level. As discussed previously, policy inequalities can emerge *between local councils* and *with the state government* but what has not been discussed is that policy inequalities can also emerge *within local councils*. For instance, a council that attempts both a multimodalism and demand management approach to a single rapid transit node can find that the park ‘n’ ride traffic is reducing the walkability of the TOD zone, while the TOD raises local land values thus expanding the park ‘n’ ride facility may become financially infeasible (Willson [2005](https://scholarcommons.usf.edu/jpt/vol8/iss5/5/); Weinberger [2012]( https://www.sciencedirect.com/science/article/pii/S0967070X11001028)). Further, the park ‘n’ ride facility could persuade the TOD residents to drive rather than walk and so the facility becomes exhausted by TOD residents rather than auto-dependent outsiders (Dovey et al. [2015]( https://search.informit.org/doi/10.3316/INFORMIT.968868422652829); Ginn [2009]( https://eprints.qut.edu.au/31827/1/Simon_Ginn_Thesis.pdf)). As such, an integrative model of modal choice is required for coordinating council policies at the metropolitan scale and minimising policy inequality by mapping the key spatial relationships (Figure 2; Kimpton et al. [2020]( https://www.sciencedirect.com/science/article/pii/S0264837719306246)). For instance, Break Even Distances (BED) that reveal important thresholds for modal choices such as where the time saved by driving is outweighed by the time lost locating parking (i.e. the walk BED), and where the time saved by rapid public transport is outweighed by the time lost diverting the commuting route towards the rapid transit corridor (i.e. the park ‘n’ ride BED). Further BED include the point by which comprehensive feeder and rapid transit coverage becomes feasible due heightening residential density and where inner city park ‘n’ ride facilities could tempt motorist to ‘railhead’ rather than minimise their VKT by using their nearest to home (i.e. destination BED; Kimpton [2020](https://link.springer.com/article/10.1007/s12061-020-09361-4)).
+As the multimodalism and demand management approaches gain popularity, practitioners and policy makers are left with the challenge of coordinating multiple approaches to ensure they are improving urban mobility at the metropolitan level. As discussed previously, policy inequalities can emerge *between local councils* and *with the state government* but what has not been discussed is that policy inequalities can also emerge *within local councils*. For instance, a council that attempts both a multimodalism and demand management approach to a single rapid transit node can find that the park ‘n’ ride traffic is reducing the walkability of the TOD zone, while the TOD raises local land values thus expanding the park ‘n’ ride facility may become financially infeasible (Willson [2005](https://scholarcommons.usf.edu/jpt/vol8/iss5/5/); Weinberger [2012]( https://www.sciencedirect.com/science/article/pii/S0967070X11001028)). Further, the park ‘n’ ride facility could persuade the TOD residents to drive rather than walk and so the facility becomes exhausted by TOD residents rather than auto-dependent outsiders (Dovey et al. [2015]( https://search.informit.org/doi/10.3316/INFORMIT.968868422652829); Ginn [2009]( https://eprints.qut.edu.au/31827/1/Simon_Ginn_Thesis.pdf)). As such, an integrative model of modal choice is required for coordinating council policies at the metropolitan scale and minimising policy inequality by mapping the key spatial relationships (Figure 3; Kimpton et al. [2020]( https://www.sciencedirect.com/science/article/pii/S0264837719306246)). For instance, Break Even Distances (BED) that reveal important thresholds for modal choices such as where the time saved by driving is outweighed by the time lost locating parking (i.e. the walk BED), and where the time saved by rapid public transport is outweighed by the time lost diverting the commuting route towards the rapid transit corridor (i.e. the park ‘n’ ride BED). Further BED include the point by which comprehensive feeder and rapid transit coverage becomes feasible due heightening residential density and where inner city park ‘n’ ride facilities could tempt motorist to ‘railhead’ rather than minimise their VKT by using their nearest to home (i.e. destination BED; Kimpton [2020](https://link.springer.com/article/10.1007/s12061-020-09361-4)).
 
 <center><img src="../data/bed_and_sheds.png" width="600" /> </center>
-<center><b><i>Figure 2. An intergrative model of modal choice</i></b> (from Kimpton et al. <a href="https://www.sciencedirect.com/science/article/pii/S0264837719306246">2020</a>)</center>
+<center><b><i>Figure 3. An intergrative model of modal choice</i></b> (from Kimpton et al. <a href="https://www.sciencedirect.com/science/article/pii/S0264837719306246">2020</a>)</center>
 
 See Kimpton et al. ([2020a](https://doi.org/10.1016/j.progress.2020.100506); [2020b]( https://www.sciencedirect.com/science/article/pii/S0264837719306246)) for further reading.
 <p></p>
@@ -699,9 +677,9 @@ See Kimpton et al. ([2020a](https://doi.org/10.1016/j.progress.2020.100506); [20
 <button class="accordion">Template Analysis</button>
 <div class="panel">
 <p></p>
-*Template analysis* is a clear, systematic, and flexible qualitative method for summarising and contrasting large volumes of policy documentation to examine *whether* and *how* planning approaches towards parking have changed for Brisbane, Sydney, and Melbourne (King, [2012](http://sk.sagepub.com/books/qualitative-organizational-research-core-methods-and-current-challenges/i1774.xml)). For this application, 39 council and state policies for the three cities from 2000 to 2018 period organised according to the comparative framework of urban mobility (Table 5) with the *predict and provide* approach functioning as the baseline planning approach. Further, the *park ‘n’ ride* approach unambiguously signifies the multimodalism planning approach, while the *parking maximums*, *pricing*, and *transit orientated development* approaches signify the demand management planning approach.
+*Template analysis* is a clear, systematic, and flexible qualitative method for summarising and contrasting large volumes of policy documentation to examine *whether* and *how* planning approaches towards parking have changed for Brisbane, Sydney, and Melbourne (King, [2012](http://sk.sagepub.com/books/qualitative-organizational-research-core-methods-and-current-challenges/i1774.xml)). For this application, 39 council and state policies for the three cities from 2000 to 2018 period organised according to the comparative framework of urban mobility (Table 4) with the *predict and provide* approach functioning as the baseline planning approach. Further, the *park ‘n’ ride* approach unambiguously signifies the multimodalism planning approach, while the *parking maximums*, *pricing*, and *transit orientated development* approaches signify the demand management planning approach.
 
-<center><b><i>Table 8. template analysis of Brisbane, Sydney, and Melbourne policies</i></b> (Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
+<center><b><i>Table 4. template analysis of Brisbane, Sydney, and Melbourne policies</i></b> (Kimpton et al. <a href="https://doi.org/10.1016/j.progress.2020.100506">2020</a>)</center>
 
 ```{r PolicyAnalysisTable}
 df1 <- read.csv("./../data/PolicyAnalysis.csv")
@@ -728,11 +706,10 @@ Regarding parking restrictions, Sydney was the earliest to introduce parking max
 
 Contrasting the three cities further reveals that Brisbane and Melbourne policies typically have parking requirements that vary according to a comprehensive list of distinct land use types and according to proximity to the CBD thus suggesting prescriptive, one-size-fits-all approach towards parking requirements. In contrast, Sydney polices typically distinguish between just a few key land use types thus suggesting a more adaptive, bespoke approach towards parking requirements. Interestingly, Sydney policies uniquely propose caps for residential parking permits, while Brisbane policies uniquely propose unbundled parking. Melbourne policies are the earliest to recommend that motorists pay fair market prices for parking space to reduce the appeal of private transport in 2002, and Brisbane and Sydney later provide similar recommendations in 2009 and 2010, respectively. Further, Melbourne polices take this fair market pricing idea one step further by discussing the demand responsive pricing approach. In sum, this template analysis of 39 policy documents suggests that the predict and provide planning approach and to a lesser extent, the multimodalism planning approach are falling out of favour as all three cities increasingly adopt the demand management approach for improving urban mobility.
 
-See Kimpton et al. ( [2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
+See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
 
 <p></p>
 </div>
-
 
 Brisbane {data-navmenu="Case Studies"}
 =====================================
@@ -740,11 +717,11 @@ Brisbane {data-navmenu="Case Studies"}
 Column {data-width=2 .tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Known Parking Supply
+### Fig. 1
 
 ```{r offstreet_brisbane_map}
 #for some reason, chunk captions cause the maps to flatten, and tm_facets stops rendering altogether
-map_top_fn <- function(ic, sa2, off) {
+map_top_fn <- function(ic, sa2, off, the_title) {
   tmap_mode("view")
   
   tm_shape(sa2, name = "Suburbs (2016 SA2)", bbox = ic) +
@@ -775,8 +752,8 @@ map_top_fn <- function(ic, sa2, off) {
                            "* Parking and riding in 2011 (%)" = "pnr_2011",
                            "* Parking and riding in 2016 (%)" = "pnr_2016",
                            "Date source:" = "source"),
-            colorNA = "grey",
-            textNA = "n/a") +
+            colorNA = NULL,
+            textNA = "< 5") +
     tm_shape(off, name = "Off Street Parking") +
     tm_polygons(col = "ttl_prk",
                 title = "Offstreet Parking Bays   (n)",
@@ -788,7 +765,7 @@ map_top_fn <- function(ic, sa2, off) {
                                "Other Bays (n)" = "othr_by",
                                "Total Bays (n)" = "ttl_prk",
                                "Data Source" = "source"),
-                textNA = "n/a")
+                textNA = "n/a") + tm_layout(title = the_title) # known bug so check when fixed https://github.com/mtennekes/tmap/issues/441
 }
 
 map_bottom_fn <- function(ic, pnr) {
@@ -802,7 +779,7 @@ map_bottom_fn <- function(ic, pnr) {
             popup.vars = c("PnR Bays (n)" = "pnr_bys",
                            "Data Source" = "source"),
             colorNA = "grey",
-            textNA = "n/a") +
+            textNA = "unavailable") +
     tm_shape(ic, name = "Inner City Frame") +
     tm_borders(col = "black", lwd = 2) +
     tm_text(text = "city", col = "black", size = 2, fontface="bold") +
@@ -812,7 +789,7 @@ map_bottom_fn <- function(ic, pnr) {
     tm_view(dot.size.fixed = TRUE, symbol.size.fixed = TRUE)
 }
 
-tm <- map_top_fn(ic = inner_cities_bris, sa2 = SA2_bris, off = off_street_parking_bris) +
+tm <- map_top_fn(ic = inner_cities_bris, sa2 = SA2_bris, off = off_street_parking_bris, the_title = "Fig. 1 Parking counted within the Brisbane City Frame and Brisbane Park 'n' Rides") +
   tm_shape(parking_meters_bris, name = "Parking Meters") +
   tm_dots(col = "onstrt_",
           title = "Bays per Parking Meter (n)",
@@ -825,12 +802,12 @@ tm <- map_top_fn(ic = inner_cities_bris, sa2 = SA2_bris, off = off_street_parkin
           colorNA = "grey",
           textNA = "n/a") +
   map_bottom_fn(ic = inner_cities_bris, pnr = pnr_bris)
-tmap_leaflet(tm)
+tmap_leaflet(tm) 
 ```
 
-### 2011 Parking Demand
+### Fig. 2
 
-```{r 2011 BCC Upset, fig.cap="***the modal choices of inner Brisbane workers in 2011***"}
+```{r 2011 BCC Upset}
 arg_city <-  "Brisbane City Council"
 arg_year <- 2011
 
@@ -954,13 +931,15 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+
+grid.text("Fig. 2 Brisbane City Frame worker trip chains in 2011", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
-### 2016 Parking Demand
+### Fig.3 
 
-```{r 2016 BCC Upset, fig.cap="***the modal choices of inner Brisbane workers in 2016***"}
+```{r 2016 BCC Upset}
 arg_city <-  "Brisbane City Council"
 arg_year <- 2016
 
@@ -1080,8 +1059,10 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+
+grid.text("Fig. 3 Brisbane City Frame worker trip chains in 2016", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
 Column {data-width=1}
@@ -1091,13 +1072,13 @@ Column {data-width=1}
 
 <center><img src="../data/river-aerial_4_3_400w.jpg" width="100%" /> </center>
 
-<center><p><b><i>The Brisbane River (<a href="https://grahamnunn.wordpress.com/tag/aerial-view-of-brisbane-river/">Nunn</a>)</i></b></p></center>
+<center><p><b><i>Fig. 4 The Brisbane River (<a href="https://grahamnunn.wordpress.com/tag/aerial-view-of-brisbane-river/">Nunn</a>)</i></b></p></center>
 
-An aspiring ‘new world city’, Brisbane is located in the south-eastern corner of the State of Queensland, about 20 kilometres inland from the Pacific Ocean. The city spreads linearly along the snaking Brisbane River. Population densities are relatively low, and detached, single-family houses typify the built environment. However, the population is growing, and the inner city has recently experienced some high-rise development and densification. In conjunction with migration, the Brisbane population is also aging: in 2016 more than a quarter of the population was not participating in the workforce. This is due to a trend among retirees from southern Australian states to move to Brisbane for warm weather year-round. Owing to the high cost of inner city housing, newcomers have typically dispersed towards the urban fringes. Meanwhile, jobs are heavily concentrated in the traditional CBD. Automobile ownership is high throughout Brisbane with 94 percent of households owning a car, whereas the public transport network is considered barely ‘average’ by international standards. Coverage, frequency, and reliability are limited outside the inner city. In addition to conventional buses, Brisbane comprises rail, BRT, and ferries. Developed in the late 19th century, Brisbane’s 380 kilometre rail network consists of six electrified suburban lines extending from the CBD in a radial pattern. In the inner city, rail catchment areas are increasingly resembling TOD. The BRT system was first introduced in 2000 and comprises 25 kilometres across three radial lines. A network of river ferries (CityCats) was introduced in 1996. Ferries have helped reorient the city back to its river and have encouraged inner city densification. All public transport services are overseen and coordinated by an integrated agency (TransLink) established in 2003. Cycling is a marginal mode: only 1.5% of people cycle to work. This is due to Brisbane’s hilly topography and hot summer weather but also a very limited road infrastructure designed to protect cyclists. The most recent major transport infrastructure projects in Brisbane have included three automobile tunnels (Clem7, Airport Link, and Legacy) and one automobile bridge (Go Between Bridge). Each of these has road tolls in place as a value capture mechanism. Active travel investments include three pedestrian-and-cyclists-only bridges (Kurilpa Bride, Eleanor Schonell Bridge, and Goodwill Bridge), a successful pedestrian mall (Queen Street Mall), and several multi-use trails (Bicentennial Bikeway and Riverwalk). A bikesharing system (CityCycle) is also available since 2017.
+An aspiring ‘new world city’, Brisbane is located in the south-eastern corner of the State of Queensland, about 20 kilometres inland from the Pacific Ocean. The city spreads linearly along the snaking Brisbane River (Fig. 4). Population densities are relatively low, and detached, single-family houses typify the built environment. However, the population is growing, and the inner city has recently experienced some high-rise development and densification. In conjunction with migration, the Brisbane population is also aging: in 2016 more than a quarter of the population was not participating in the workforce. This is due to a trend among retirees from southern Australian states to move to Brisbane for warm weather year-round. Owing to the high cost of inner city housing, newcomers have typically dispersed towards the urban fringes. Meanwhile, jobs are heavily concentrated in the traditional CBD. Automobile ownership is high throughout Brisbane with 94 percent of households owning a car, whereas the public transport network is considered barely ‘average’ by international standards. Coverage, frequency, and reliability are limited outside the inner city. In addition to conventional buses, Brisbane comprises rail, BRT, and ferries. Developed in the late 19th century, Brisbane’s 380 kilometre rail network consists of six electrified suburban lines extending from the CBD in a radial pattern. In the inner city, rail catchment areas are increasingly resembling TOD. The BRT system was first introduced in 2000 and comprises 25 kilometres across three radial lines. A network of river ferries (CityCats) was introduced in 1996. Ferries have helped reorient the city back to its river and have encouraged inner city densification. All public transport services are overseen and coordinated by an integrated agency (TransLink) established in 2003. Cycling is a marginal mode: only 1.5% of people cycle to work. This is due to Brisbane’s hilly topography and hot summer weather but also a very limited road infrastructure designed to protect cyclists. The most recent major transport infrastructure projects in Brisbane have included three automobile tunnels (Clem7, Airport Link, and Legacy) and one automobile bridge (Go Between Bridge). Each of these has road tolls in place as a value capture mechanism. Active travel investments include three pedestrian-and-cyclists-only bridges (Kurilpa Bride, Eleanor Schonell Bridge, and Goodwill Bridge), a successful pedestrian mall (Queen Street Mall), and several multi-use trails (Bicentennial Bikeway and Riverwalk). A bikesharing system (CityCycle) is also available since 2017.
 
-As discussed previously, the Brisbane City Council has confirmed that unlike the other case study cities, they do not have a census of inner city parking supply although parking has been a priority focus previously with their [parking taskforce](https://www.brisbane.qld.gov.au/traffic-and-transport/parking-in-brisbane/brisbane-parking-taskforce). They do however collect and release paid on street that reveals 883 parking meters and 6,924 paid on street parking bays are known. Fortunately, the Queensland Department of Transport and Main Roads has conducted a 18% sample of the inner city surface that reveals 60,014 off street parking bays are known that include residential, commercial, and workplace parking. Combined with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data)and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that just 1 in 4.6 private vehicles has known residential parking, and just 1 in 1.6 private vehicles arriving with workers could be parked within all other known parking. Using the City of Melbourne parking data to calculate average bay size, it is also possible to estimate there are at least 1,928 hectares of parking, which could cover 5 percent of inner city surface if laid flat.
+As discussed previously, the Brisbane City Council has confirmed that unlike the other case study cities, they do not have a census of inner city parking supply although parking has been a priority focus previously with their [parking taskforce](https://www.brisbane.qld.gov.au/traffic-and-transport/parking-in-brisbane/brisbane-parking-taskforce). They do however collect and release paid on street that reveals 883 parking meters and 6,924 paid on street parking bays are known (Fig. 1). Fortunately, the Queensland Department of Transport and Main Roads has conducted a 18% sample of the inner city surface that reveals 60,014 off street parking bays are known that include residential, commercial, and workplace parking. Combined with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data)and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that just 1 in 4.6 private vehicles has known residential parking, and just 1 in 1.6 private vehicles arriving with workers could be parked within all other known parking. Using the City of Melbourne parking data to calculate average bay size, it is also possible to estimate there are at least 1,928 hectares of parking, which could cover 5 percent of inner city surface if laid flat.
 
-Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is also possible to examine 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 and 2016, and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, an overwhelming majority of inner Brisbane workers parked private vehicles in the inner city during 2011 and this majority expanded further by 2016 thus suggesting that public transport is losing appeal or that private transport is gaining appeal. The latter could be attributable to major transport infrastructure projects in including 3 automobile tunnels (i.e. Clem7, Airport Link, Legacy) and 1 automobile bridge (i.e. Go Between Bridge) that are reducing congestion and have tolls as value capture mechanisms, which suggests Brisbane motorists are willing to pay for the privilege to avoid congestion. Active transport has had just a marginal increase possibly due to Brisbane hilly geography so it is plausible that the rise of e-bikes could introduce change by the time of the 2021 CPH. Last, it is notable that parking ‘n’ riding is a popular multimodal journey into the inner city although users have remained similar at both time points.
+Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is also possible to examine 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 and 2016, and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, an overwhelming majority of inner Brisbane workers parked private vehicles in the inner city during 2011 (Fig. 2) and this majority expanded further by 2016 (Fig. 3) thus suggesting that public transport is losing appeal or that private transport is gaining appeal. The latter could be attributable to major transport infrastructure projects in including 3 automobile tunnels (i.e. Clem7, Airport Link, Legacy) and 1 automobile bridge (i.e. Go Between Bridge) that are reducing congestion and have tolls as value capture mechanisms, which suggests Brisbane motorists are willing to pay for the privilege to avoid congestion. Active transport has had just a marginal increase possibly due to Brisbane hilly geography so it is plausible that the rise of e-bikes could introduce change by the time of the 2021 CPH. Last, it is notable that parking ‘n’ riding is a popular multimodal journey into the inner city although users have remained similar at both time points.
 
 
 Sydney {data-navmenu="Case Studies"}
@@ -1106,10 +1087,10 @@ Sydney {data-navmenu="Case Studies"}
 Column {data-width=2 .tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Known Parking Supply
+### Fig. 1
 
 ```{r offstreet_sydney_map}
-tm <- map_top_fn(ic = inner_cities_syd, sa2 = SA2_syd, off = off_street_parking_syd) +
+tm <- map_top_fn(ic = inner_cities_syd, sa2 = SA2_syd, off = off_street_parking_syd, the_title = "Fig. 1 Parking counted within the City of Sydney and Sydney Park 'n' Rides") +
   tm_shape(parking_meters_syd, name = "Parking Meters") +
   tm_dots(col = "onstrt_",
           title = "Bays per Parking Meter (n)",
@@ -1120,15 +1101,15 @@ tm <- map_top_fn(ic = inner_cities_syd, sa2 = SA2_syd, off = off_street_parking_
           popup.vars = c("Bays per Parking Meter..(n)" = "onstrt_",
                          "Data Source" = "source"),
           colorNA = "grey",
-          textNA = "n/a") +
+          textNA = "unavailable") +
   map_bottom_fn(ic = inner_cities_syd, pnr = pnr_syd)
 
 tmap_leaflet(tm)
 ```
 
-### 2011 Parking Demand
+### Fig. 2
 
-```{r 2011 CoS Upset, fig.cap="***the modal choices of inner Sydney workers in 2011***"}
+```{r 2011 CoS Upset}
 arg_city <-  "City of Sydney"
 arg_year <- 2011
 
@@ -1252,13 +1233,14 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+grid.text("Fig. 2 City of Sydney worker trip chains in 2011", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
-### 2016 Parking Demand
+### Fig. 3 
 
-```{r 2016 CoS Upset, fig.cap="***the modal choices of inner Sydney workers in 2016***"}
+```{r 2016 CoS Upset}
 arg_city <-  "City of Sydney"
 arg_year <- 2016
 
@@ -1382,8 +1364,10 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+
+grid.text("Fig. 3 City of Sydney worker trip chains in 2016", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
 Column {data-width=1}
@@ -1393,13 +1377,13 @@ Column {data-width=1}
 
 <center><img src="../data/1280px-Sydney_aerial_view_4_3_400w.jpg" width="100%"/> </center>
 
-<center><p><b><i>Port Jackson Bay (<a href="https://commons.wikimedia.org/w/index.php?curid=33470485"> Kozlenko</a>)</i></b></p></center>
+<center><p><b><i>Fig. 4 Port Jackson Bay (<a href="https://commons.wikimedia.org/w/index.php?curid=33470485"> Kozlenko</a>)</i></b></p></center>
 
-Australia’s ‘mother city’, Sydney is located midway along the east coast of the State of New South Wales. Its spatial form fans out from Port Jackson, and is interrupted by multiple harbours, bays, and water bodies (e.g., Sydney Harbour, Middle Harbour, North Harbour, Lane Cove River, and Parramatta River). Once the landing site of the earliest European settlers, Sydney remains the economic powerhouse of the continent. It is also highly ranked globally for its economic influence. Furthermore, it is the principal destination for newly arriving migrants to Australia: 39% of the population is born overseas. The city is the most populous in Australia, though growth has been slowing down. The housing prices are among the highest in the world, comparable to London and New York. Detached, single-family houses are quite common and comprise more than half of the housing stock. This explains why residential development stretches quite far from the CBD. Sydney’s public transit network is ranked ‘poor’ by international standards. It is worse than Brisbane’s, particularly in terms of accessibility. This is, in part, attributable to the challenges of travelling around the harbours and reaching the CBD from the suburbs. (The traditional Sydney CBD is located near the shore and therefore far from the city’s geographical centre.) The city is car-oriented, though less so than Brisbane: 89% of households own an automobile. The rail network (tram and train) extends 815 kilometres, and a few segregated busways have been built, which, however, do not connect in an integrated network. A metro system (the nation’s largest infrastructure project) is currently under development. It will deliver 66 kilometres of track and 31 stations. In conjunction, the existing light rail network will be expanded. Ferry transport is also available along the bays and the Parramatta River, with all lines emanating from Circular Quay in the CBD. Cycling is even less popular than in Brisbane and Melbourne. While the weather patterns are arguably ideal for year-round cycling, investment in this mode has been minimal. At least six docked and dockless bikesharing schemes operate in different parts of Sydney, with limited success.
+Australia’s ‘mother city’, Sydney is located midway along the east coast of the State of New South Wales. Its spatial form fans out from Port Jackson, and is interrupted by multiple harbours, bays, and water bodies (Fig. 4; e.g., Sydney Harbour, Middle Harbour, North Harbour, Lane Cove River, and Parramatta River). Once the landing site of the earliest European settlers, Sydney remains the economic powerhouse of the continent. It is also highly ranked globally for its economic influence. Furthermore, it is the principal destination for newly arriving migrants to Australia: 39% of the population is born overseas. The city is the most populous in Australia, though growth has been slowing down. The housing prices are among the highest in the world, comparable to London and New York. Detached, single-family houses are quite common and comprise more than half of the housing stock. This explains why residential development stretches quite far from the CBD. Sydney’s public transit network is ranked ‘poor’ by international standards. It is worse than Brisbane’s, particularly in terms of accessibility. This is, in part, attributable to the challenges of travelling around the harbours and reaching the CBD from the suburbs. (The traditional Sydney CBD is located near the shore and therefore far from the city’s geographical centre.) The city is car-oriented, though less so than Brisbane: 89% of households own an automobile. The rail network (tram and train) extends 815 kilometres, and a few segregated busways have been built, which, however, do not connect in an integrated network. A metro system (the nation’s largest infrastructure project) is currently under development. It will deliver 66 kilometres of track and 31 stations. In conjunction, the existing light rail network will be expanded. Ferry transport is also available along the bays and the Parramatta River, with all lines emanating from Circular Quay in the CBD. Cycling is even less popular than in Brisbane and Melbourne. While the weather patterns are arguably ideal for year-round cycling, investment in this mode has been minimal. At least six docked and dockless bikesharing schemes operate in different parts of Sydney, with limited success.
 
-Also discussed previously, the City of Sydney has a small local government area relative to Brisbane City Council which makes a census of parking more feasible. Their open parking data reveals 1,365 parking meters and 20,897 paid on street parking bays are known within inner Sydney and their [FES]( https://www.cityofsydney.nsw.gov.au/surveys-case-studies-reports/floor-space-employment-survey-2017) data reveals a further 11,959 residential and 5,919 other off street parking bays are known. Combined again with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data) and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that 1 in 5.13 private vehicles have known residential off street parking, and just 1 in 20.99 private vehicles arriving with workers could be parked within all other known parking. Using the City of Melbourne parking data again to calculate average bay size, it is also possible to estimate there are at least 50,132 hectares of parking, which could cover 5 percent of inner city surface if laid flat.
+Also discussed previously, the City of Sydney has a small local government area relative to Brisbane City Council which makes a census of parking more feasible. Their open parking data reveals 1,365 parking meters and 20,897 paid on street parking bays are known within inner Sydney and their [FES]( https://www.cityofsydney.nsw.gov.au/surveys-case-studies-reports/floor-space-employment-survey-2017) data reveals a further 11,959 residential and 5,919 other off street parking bays are known  (Fig. 1). Combined again with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data) and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that 1 in 5.13 private vehicles have known residential off street parking, and just 1 in 20.99 private vehicles arriving with workers could be parked within all other known parking. Using the City of Melbourne parking data again to calculate average bay size, it is also possible to estimate there are at least 50,132 hectares of parking, which could cover 5 percent of inner city surface if laid flat.
 
-Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is again possible to examine the 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 and 2016, and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, a small majority of inner Sydney workers parked their private vehicles in the inner city during 2011 but the majority became train journeys in 2016, which suggests effective TOD policies. Active transport has gained considerable popularity for reaching inner Sydney relative to inner Brisbane, and train ridership has had a remarkable 64% increase.  This suggests that [projects](https://www.transport.nsw.gov.au/sites/default/files/media/documents/2017/long-term-transport-master-plan-annual-update-2014.pdf) including the North West Rail Link and the South West Rail Link that improve coverage, and the Northern Sydney Freight Corridor that has removed a portion of freight trains are proving effective at increasing the appeal of rail travel.
+Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is again possible to examine the 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 and 2016, and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, a small majority of inner Sydney workers parked their private vehicles in the inner city during 2011 (Fig. 2) but the majority became train journeys in 2016 (Fig. 3), which suggests effective TOD policies. Active transport has gained considerable popularity for reaching inner Sydney relative to inner Brisbane, and train ridership has had a remarkable 64% increase.  This suggests that [projects](https://www.transport.nsw.gov.au/sites/default/files/media/documents/2017/long-term-transport-master-plan-annual-update-2014.pdf) including the North West Rail Link and the South West Rail Link that improve coverage, and the Northern Sydney Freight Corridor that has removed a portion of freight trains are proving effective at increasing the appeal of rail travel.
 
 Melbourne {data-navmenu="Case Studies"}
 =====================================
@@ -1407,12 +1391,12 @@ Melbourne {data-navmenu="Case Studies"}
 Column {data-width=2 .tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Known Parking Supply
+### Fig. 1
 
 ```{r offstreet_melbourne_map}
 purple_palette <- RColorBrewer::brewer.pal(6, "Purples")
 
-tm <- map_top_fn(ic = inner_cities_melb, sa2 = SA2_melb, off = off_street_parking_melb) +
+tm <- map_top_fn(ic = inner_cities_melb, sa2 = SA2_melb, off = off_street_parking_melb, the_title = "Fig. 1 Parking counted within the City of Melbourne and Melbourne Park 'n' Rides") +
   tm_shape(on_street_parking_melb, name = "Onstreet Feature") +
   tm_dots(col = "object",
           palette = c(purple_palette[3], purple_palette[6]),
@@ -1426,9 +1410,9 @@ tm <- map_top_fn(ic = inner_cities_melb, sa2 = SA2_melb, off = off_street_parkin
 tmap_leaflet(tm)
 ```
 
-### 2011 Parking Demand
+### Fig. 2
 
-```{r 2011 CoM Upset, fig.cap="***the modal choices of inner Melbourne workers in 2011***"}
+```{r 2011 CoM Upset}
 arg_city <-  "City of Melbourne"
 arg_year <- 2011
 
@@ -1548,13 +1532,15 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+
+grid.text("Fig. 2 City of Melbourne worker trip chains in 2011", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
-### 2016 Parking Demand
+### Fig. 3
 
-```{r 2016 CoM Upset, fig.cap="***the modal choices of inner Melbourne workers in 2016***"}
+```{r 2016 CoM Upset}
 arg_city <-  "City of Melbourne"
 arg_year <- 2016
 
@@ -1674,8 +1660,9 @@ grid.legend(labels = c('Private Transport',"Parking `n' Riding", "Public Transpo
             hgap = unit(.8, "lines"),
             vgap = unit(.3, "lines"),
             gp=gpar(col = uq_palette_4, fontsize = 8),
-            vp = viewport(x=0.7, y=0.9)
+            vp = viewport(x=0.7, y=0.8)
             )
+grid.text("Fig. 3 City of Melbourne worker trip chains in 2016", x = 0.6, y = 0.95, gp=gpar(fontsize=10, fontface = "bold"))
 ```
 
 Column {data-width=1 }
@@ -1685,14 +1672,70 @@ Column {data-width=1 }
 
 <center><img src="../data/melbourne CBD and port panorama website_4_3_400w.jpg" width="100%"/> </center>
 
-<center><p><b><i>Port Phillip Bay (<a href="https://population.org.au/articles/2019-06-08/aerial-photos-melbournes-growth-2018">Fry</a>)</i></b></p></center>
+<center><p><b><i>Fig. 4 Port Phillip Bay (<a href="https://population.org.au/articles/2019-06-08/aerial-photos-melbournes-growth-2018">Fry</a>)</i></b></p></center>
 
-Melbourne, Australia’s cultural capital, is located midway along the south coast of the State of Victoria. Its spatial form wraps around Port Phillip Bay. Since the gold rush of the 1850s, Melbourne has remained one of the world’s wealthiest cities and often ranks as one of the most liveable cities globally. While its population is only slightly behind Sydney, its recent growth exceeds Sydney’s. Hence, Melbourne is poised to soon become Australia’s most populous city. It is, however, more compact than both Sydney and Brisbane. The public transport network ranks below average by global standards – and is considered worse than the public transport on offer in Brisbane and Sydney, relative to the city’s size and importance. Melbourne comprises an iconic 250-kilometre tram network, which is still the largest in the world. It managed to retain its trams at the time when other large Australian cities removed their rail tracks to make space for automobiles. While trams have priority on the road, they can become trapped in traffic congestion, same as private automobiles, which may explain the city’s poor global ranking. Another weakness of Melbourne’s transport system is its road design, which requires drivers to frequently change lanes and take ‘hook turns’ to navigate around trams. This exacerbates congestion. Similar to Sydney, Melbourne is currently developing a cross-city metro system (Metrotunnel), which will bypass most inner city stations. Cycling only slightly more popular than in Brisbane. A docked bikesharing scheme (Melbourne Bike Share) was in operation between 2010 and 2019. A dockless scheme (oBikes) was trialled in 2018 but it proved unsuccessful.
+Melbourne, Australia’s cultural capital, is located midway along the south coast of the State of Victoria. Its spatial form wraps around Port Phillip Bay (Fig. 4). Since the gold rush of the 1850s, Melbourne has remained one of the world’s wealthiest cities and often ranks as one of the most liveable cities globally. While its population is only slightly behind Sydney, its recent growth exceeds Sydney’s. Hence, Melbourne is poised to soon become Australia’s most populous city. It is, however, more compact than both Sydney and Brisbane. The public transport network ranks below average by global standards – and is considered worse than the public transport on offer in Brisbane and Sydney, relative to the city’s size and importance. Melbourne comprises an iconic 250-kilometre tram network, which is still the largest in the world. It managed to retain its trams at the time when other large Australian cities removed their rail tracks to make space for automobiles. While trams have priority on the road, they can become trapped in traffic congestion, same as private automobiles, which may explain the city’s poor global ranking. Another weakness of Melbourne’s transport system is its road design, which requires drivers to frequently change lanes and take ‘hook turns’ to navigate around trams. This exacerbates congestion. Similar to Sydney, Melbourne is currently developing a cross-city metro system (Metrotunnel), which will bypass most inner city stations. Cycling only slightly more popular than in Brisbane. A docked bikesharing scheme (Melbourne Bike Share) was in operation between 2010 and 2019. A dockless scheme (oBikes) was trialled in 2018 but it proved unsuccessful.
 
-Also discussed previously, the City of Melbourne as well as the City of Sydney have a small local government areas relative to Brisbane City Council which makes a census of parking more feasible. Their open parking data reveals that 23,310 on-street parking bays are known and available as polygonal data for examining bay size. Further, 2,928 of these on street parking bays are managed by 1,962 parking meters and 3,111 by on street sensors that connect to a smart phone application and enable motorists to pay by the minute rather than their predicted duration. Their [CLUE](https://www.melbourne.vic.gov.au/about-melbourne/research-and-statistics/city-economy/census-land-use-employment/Pages/clue.aspx) data reveals a further 49,371 residential off street parking bays and 143,740 other off street parking bays are known, and all these parking data. Combined once more with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data) and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that there are 1.43 (i.e. 1/0.7) residential parking bays known each private vehicle owned thus suggesting a residential parking oversupply. Also, there are 1.05 private vehicles arriving with inner Melbourne workers for each other off street parking bay known thus suggesting either an incomplete census or a classification error between private and other parking. Last, it is possible to provide a relatively accurate estimate of parking area for Melbourne given that the on street parking is available as polygons and the CLUE data include floor space. In sum, inner Melbourne has 207.83 hectares of residential parking, 157.28 hectares of other off-street parking known, and 33.95 hectares of on street parking known, which cumulatively could cover 11% of inner Melbourne if laid flat which is similar to the typical US city 10% estimate (Scharnhorst, [2018](https://www.documentcloud.org/documents/4598972-RIHA-Parking-Report)).
+Also discussed previously, the City of Melbourne as well as the City of Sydney have a small local government areas relative to Brisbane City Council which makes a census of parking more feasible. Their open parking data reveals that 23,310 on-street parking bays are known and available as polygonal data for examining bay size (Fig. 1). Further, 2,928 of these on street parking bays are managed by 1,962 parking meters and 3,111 by on street sensors that connect to a smart phone application and enable motorists to pay by the minute rather than their predicted duration. Their [CLUE](https://www.melbourne.vic.gov.au/about-melbourne/research-and-statistics/city-economy/census-land-use-employment/Pages/clue.aspx) data reveals a further 49,371 residential off street parking bays and 143,740 other off street parking bays are known, and all these parking data. Combined once more with the Australian Bureau of Statistics’ Census of Population and Housing [datapacks]( https://www.abs.gov.au/websitedbs/d3310114.nsf/home/2016%20datapacks) (CPH), it is possible to count the number of private vehicles owned by inner city residents (i.e., the VEHD data) and the number of private vehicles arriving with inner city workers (i.e., the MTWP15 data). This combination reveals that there are 1.43 (i.e. 1/0.7) residential parking bays known each private vehicle owned thus suggesting a residential parking oversupply. Also, there are 1.05 private vehicles arriving with inner Melbourne workers for each other off street parking bay known thus suggesting either an incomplete census or a classification error between private and other parking. Last, it is possible to provide a relatively accurate estimate of parking area for Melbourne given that the on street parking is available as polygons and the CLUE data include floor space. In sum, inner Melbourne has 207.83 hectares of residential parking, 157.28 hectares of other off-street parking known, and 33.95 hectares of on street parking known, which cumulatively could cover 11% of inner Melbourne if laid flat which is similar to the typical US city 10% estimate (Scharnhorst, [2018](https://www.documentcloud.org/documents/4598972-RIHA-Parking-Report)).
 
-Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is once more possible to examine the 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 and 2016, and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, the gap is closing between inner Melbourne workers parking their private vehicles in the inner city and other modal choices but it is also notable that bicycle popularity has slid behind bus popularity. Similar to Sydney, the declining popularity in driving is largely attributable to a 58% rise in rail ridership, which could be attributable to [projects]( https://www.ptv.vic.gov.au/assets/default-site/footer/legal-and-policies/growing-our-rail-network-2018-2025/5290c0d0b4/PTV_Network-Development-Plan_Metropolitan-Rail_Overview_2016update.pdf) such as the Regional Rail Link that has extended the rail network 47.5 kilometres west and upgrades such as the Cranbourne Line that raises the rail line above traffic crossings. Further, this uptake in rail travel could be a welcoming sign for the Melbourne Metro Tunnel project that is becoming tarnished by [budgetary blowouts]( https://www.abc.net.au/news/2020-12-11/metro-tunnel-budget-blows-out-by-more-than-2-billion/12974940) and [delays](https://www.theage.com.au/national/victoria/metro-tunnel-digging-running-seven-months-late-20201115-p56epy.html).
+Using the CPH accessed using the [Census TableBuilder]( https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder), it is once more possible to examine the 236 distinct multimodal trip chains [MTWP] for inner city workers in 2011 (Fig. 2) and 2016 (Fig. 3), and summarise the complexity of these 3 mode trip chains using “upset plots” (see Kimpton [2019](https://journals.sagepub.com/doi/full/10.1177/0308518X19890871)). For example, the gap is closing between inner Melbourne workers parking their private vehicles in the inner city and other modal choices but it is also notable that bicycle popularity has slid behind bus popularity. Similar to Sydney, the declining popularity in driving is largely attributable to a 58% rise in rail ridership, which could be attributable to [projects]( https://www.ptv.vic.gov.au/assets/default-site/footer/legal-and-policies/growing-our-rail-network-2018-2025/5290c0d0b4/PTV_Network-Development-Plan_Metropolitan-Rail_Overview_2016update.pdf) such as the Regional Rail Link that has extended the rail network 47.5 kilometres west and upgrades such as the Cranbourne Line that raises the rail line above traffic crossings. Further, this uptake in rail travel could be a welcoming sign for the Melbourne Metro Tunnel project that is becoming tarnished by [budgetary blowouts]( https://www.abc.net.au/news/2020-12-11/metro-tunnel-budget-blows-out-by-more-than-2-billion/12974940) and [delays](https://www.theage.com.au/national/victoria/metro-tunnel-digging-running-seven-months-late-20201115-p56epy.html).
 
+City Comparison {data-navmenu="Case Studies"}
+=====================================
+
+Column {data-width=1}
+-----------------------------------------------------------------------
+
+```{r city_comparison}
+sf1 <- inner_cities %>% 
+  st_centroid() %>%
+  transmute(city = ifelse(city == "Brisbane City Council", "Brisbane", ifelse(city == "City of Sydney", "Sydney", "Melbourne") ))
+library(ozmaps)
+sf2 <- ozmap_data("states") %>% 
+  st_transform(crs = st_crs(sf1)) %>% 
+  filter(NAME != "Other Territories")
+
+bb <- sf1
+
+tmap_mode("view")
+tm <- tm_shape(sf2, name = "States", bbox = bb) +
+      tm_borders(col = "gray23") + 
+    tm_text(text = "NAME", col = "gray23", size = 1, fontface="bold") +
+  tm_shape(sf1, name = "Cities") +
+      tm_dots(col = uq_palette[3],
+            id = "city",
+            popup.vars = NULL) + 
+    tm_text(text = "city", col = uq_palette[3], size = 1.5, fontface="bold", just = "right") +
+  tm_layout(title = "Fig. 1 The Three Australian Case Study Cities") +
+  tm_basemap(providers$Stamen.TonerBackground, group = "State", alpha = 0.5) +
+    tm_basemap(providers$Stamen.TonerLite, group = "Streets", alpha = 1) +
+  tm_basemap(providers$OpenTopoMap, group = "Buildings", alpha = 1) +
+  tm_basemap(providers$Esri.WorldImagery, group = "Image", alpha = 1) +
+    tm_view(dot.size.fixed = TRUE, symbol.size.fixed = TRUE)
+
+tmap_leaflet(tm) 
+```
+
+Column {data-width=2}
+-----------------------------------------------------------------------
+
+### Comparing Parking and Urban Mobility in Brisbane, Sydney and Melbourne 
+<p></p>
+
+Having examined: planning approaches and polices (i.e., predict & provide, multimodalism, and demand management); inner city parking demand, supply, and management (i.e., approved development applications and raking rates); park ‘n’ ride capacity; and changes to multimodal trip chains for the three most populous Australian cities (i.e., Sydney, Melbourne, and Brisbane in descending order), the research findings can be summarised as follows.
+
+The template analysis of 39 parking policies for Brisbane, Sydney, and Melbourne revealed that all three cities are transitioning away from at least explicit mention of the “predict & provide” approach to parking policy and management (e.g., predicting parking demand and providing accordingly), and towards “multimodalism” (e.g., encouraging trip chaining rather than sole reliance on private transport) and “demand management” (e.g., restricting parking supply to reduce the appeal of private transport; see the Policy/Template Analysis section). While this template analysis suggests a similar intent across the three cities, the approved development application analysis revealed that Brisbane City Council (BCC) is a relatively weak enforcer of its parking maximums policies (see Supply and Demand/Parking Supply section). Melbourne polices provide the earliest indication of a multimodalism planning approach by explicitly recommending park ‘n’ rides along rapid transport corridors in 2002 and Brisbane was the next to follow in 2008 but with a more nuanced approach recommending that park ‘n’ rides be located further than 10kilometers from the urban core since active and public transport are more likely to be viable alternatives within this range. Interestingly, explicit use of the term “Transit Orientated Development” (TOD) only appears in relatively recent policies for each city yet nonetheless all three cities have earlier policies advocating to curtail the appeal of driving relative to the alternatives thus it is unsurprising that all three cities were receptive to demand management approaches such as TOD.
+
+Residential parking demand (i.e., car ownership) has grown from 2011 to 2016 at comparative rate to the dwelling stock for inner Brisbane whereas residential parking demand is slowing relative to the dwelling stock for inner Sydney and Melbourne during the same period (see Supply and Demand/Parking Demand section). Further, the proportion of car-free households rose sharply for inner Melbourne during this period. Combined these findings suggest that the City of Sydney and especially the City of Melbourne’s demand management policies are reducing demand for private vehicles and therefore demand for parking, as intended, whereas the Brisbane City Council demand management policies are relatively ineffective or too poorly enforced given the relatively high rate of parking space to dwellings on approved development applications (see Supply and Demand/Parking Supply section).
+
+Non-residential parking demand (i.e., inner city workers that drove) increased from 2011 to 2016 within inner Brisbane but declined inner Sydney and inner Melbourne thus again Brisbane’s demand management approach is falling short of the remaining case studies (see Supply and Demand/Parking Demand section). It is also notable that inner Brisbane had a relatively small rise in inner city workers for which driving seems to have greater appeal. This could in part be attributable to Brisbane’s major transport infrastructure projects during this period (e.g., Clem7, Airport Link, and Legacy tunnels, and the Go Between Bridge for motorist) that at least temporarily relieved traffic congestion for motorists willing/able to afford the associated tolls. Interestingly, inner Melbourne had the most expensive public on-street parking yet the cheapest commercial and public off-street parking (see the Supply and Demand/Parking Management section). This is a good indicator that the demand for non-residential parking is declining in Melbourne given that the proportion of inner Melbourne workers arriving by car is also in decline.
+
+Multimodal trip chains changed from 2011 to 2016 for all three cities (see Fig. 2 and Fig. 3 from the Brisbane, Sydney, and Melbourne case study sections) and indicated whether and how the multimodalism and demand management planning approaches and policies are having the intended impacts (see the Policy/Template Analysis section). This novel use of upset plots (see Kimpton [2020]( https://journals.sagepub.com/doi/10.1177/0308518X19890871)) revealed that an overwhelming majority of inner Brisbane workers arrived by private transport in 2011 and this margin expanded further by 2016 thus suggesting that the multimodalism and inner city demand management approaches and policies are not having the intended impact. In contrast, the majority of inner Sydney workers arrived by private car in 2011 by a relatively small margin and by 2016 the majority were arriving by train thus suggesting that inner Sydney policies have been particularly effective. While the majority of inner Melbourne workers continue to arrive by private car, the margin is shrinking thus suggesting that Melbourne policies are having the intended impact of reducing the appeal of driving and parking within the inner city.
+
+Last, examining the ranked order of trip chains for the three cities (see Fig. 2 and Fig. 3 from the Brisbane, Sydney, and Melbourne case study sections) revealed that the appeal cycling to an inner Brisbane workplace has overtaken the appeal of driving to a train station and completing the journey by train. Likewise, the appeal riding a motor cycle to an inner Brisbane workplace has over taken the appeal of driving to a bus stop and completing the journey by bus. As such, these findings suggest that parking and riding are losing appeal in Brisbane but it is also a good indicator that Brisbane’s cycle ways are persuading more commuters to cycle to their inner city workplace. Interestingly, riding a bus to the train station and completing the journey by train is overtaking driving to a train station and completing the journey by train for Sydney which again suggests that demand management policies have been particularly effective in Sydney. Also interesting, complex trip chains are gaining popularity amongst inner Melbourne workers including trip chains involving cars, trains, and trams, and trip chains involving trains, trams, and busses thus suggesting that the Melbourne commuters regard their network as reliable (see the Policy/Multimodalism section) and this city is best positioned for the implementation of Mobility as a Service (MaaS). 
+
+See Kimpton et al. ([2020](https://doi.org/10.1016/j.progress.2020.100506)) for further reading.
+<p></p>
 
 West End {data-navmenu="Case Studies"}
 =====================================
@@ -1700,7 +1743,129 @@ West End {data-navmenu="Case Studies"}
 Column {data-width=2, .tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Visitor Purpose
+### Fig.1 
+
+```{r west_end}
+cons <- 0.0001
+
+df <- data.frame(lon = c(153.012075+cons, 153.012075-cons, 153.012772-cons, 153.012772+cons),
+                 lat = c(-27.480955-cons/3.45, -27.480955,-27.477233, -27.477233-cons*2))
+
+boundary_st <- df %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326) %>%
+  summarise(geometry = st_combine(geometry)) %>%
+  st_cast("POLYGON") %>% 
+  mutate(id = "Case Study",
+         long = "Boundary St, West End Case Study Area")
+
+bb <- st_buffer(boundary_st, dist = cons*10)
+
+tmap_mode("view")
+tm <- tm_shape(SA2_bris, name = "Suburbs (2016 SA2)", bbox = bb) +
+    tm_polygons(col = "inner_city_workers_2016",
+            title = "Innercity Workers 2016   (n)",
+            style = "cont",
+            alpha = 0.8,
+            border.alpha = 0.8,
+            palette = "Reds",
+            id = "id",
+            popup.vars = c("Area (ha)" = "area_ha",
+                           "Distance to Central Station (km)" = "km_from_central",
+                           "Distance to a PnR (km)" = "km_from_pnr",
+                           "Vehicles/1 bedroom dwellings in 2011" = "one_bedroom_2011",
+                           "Vehicles/1 bedroom dwellings in 2016" = "one_bedroom_2016",
+                           "Vehicles/2 bedroom dwellings in 2011" = "two_bedrooms_2011",
+                           "Vehicles/2 bedroom dwellings in 2016" = "two_bedrooms_2016",
+                           "Vehicles/3+ bedroom dwellings in 2011" = "over_two_bedrooms_2011",
+                           "Vehicles/3+ bedroom dwellings in 2016" = "over_two_bedrooms_2016",
+                           "Innercity workers in 2011 (n)" = "inner_city_workers_2011",
+                           "Innercity workers in 2016 (n)" = "inner_city_workers_2016",
+                           "* Using car/motorbikes in 2011 (%)" = "vehicle_2011",
+                           "* Using car/motorbikes in 2016 (%)" = "vehicle_2016",
+                           "* Using public transport in 2011 (%)" = "public_transport_2011",
+                           "* Using public transport in 2016 (%)" = "public_transport_2016",
+                           "* Using active transport in 2011 (%)" = "active_transport_2011",
+                           "* Using active transport in 2016 (%)" = "active_transport_2016",
+                           "* Parking and riding in 2011 (%)" = "pnr_2011",
+                           "* Parking and riding in 2016 (%)" = "pnr_2016",
+                           "Date source:" = "source"),
+            colorNA = NULL,
+            textNA = "< 5") +
+    tm_shape(off_street_parking_bris, name = "Off Street Parking") +
+    tm_polygons(col = "ttl_prk",
+                title = "Offstreet Parking Bays   (n)",
+                alpha = 0.8,
+                style="cont",
+                palette = "Blues",
+                id = "id",
+                popup.vars = c("Residential Bays (n)" = "rsdntl_",
+                               "Other Bays (n)" = "othr_by",
+                               "Total Bays (n)" = "ttl_prk",
+                               "Data Source" = "source"),
+                textNA = "n/a") +
+    tm_shape(boundary_st, name = "Case Study") +
+  tm_polygons(col = "black", border.col = "black", lwd = 2, alpha = 0.5,
+              id = "long", popup.vars = NULL) +
+    tm_text(text = "id", col = "black", size = 2, fontface="bold") +
+    tm_shape(parking_meters_bris, name = "Parking Meters") +
+  tm_dots(col = "onstrt_",
+          title = "Bays per Parking Meter (n)",
+          alpha = 0.8,
+          style = "cont",
+          palette = "Purples",
+          id = "id",
+          popup.vars = c("Bays per Parking Meter (n)" = "onstrt_",
+                         "Data Source" = "source"),
+          colorNA = "grey",
+          textNA = "n/a") +
+  tm_layout(title = "Fig. 1 Visitor intercept and on street parking observation") +
+    tm_shape(inner_cities_bris, name = "Inner City Frame") +
+    tm_borders(col = "black", lwd = 2) +
+    tm_text(text = "city", col = "black", size = 2, fontface="bold") +
+    tm_basemap(providers$Stamen.TonerLite, group = "Roads", alpha = 0.4) +
+    tm_basemap(providers$OpenRailwayMap, group = "Rail", alpha = 0.8) +
+    tm_basemap(providers$Esri.WorldImagery, group = "Image", alpha = 1) +
+    tm_view(dot.size.fixed = TRUE, symbol.size.fixed = TRUE)
+
+tmap_leaflet(tm) 
+```
+
+### Fig. 2
+
+```{r survey_time}
+#for some reason, chunk captions cause the graphs to flatten
+f <- list(
+  family = "Arial",
+  size = 15,
+  color = "black"
+)
+y <- list(
+  title = "Survey [time]",
+  titlefont = f
+)
+
+df1 <- intercept_survey %>% 
+  transmute(day,
+            transport = mode,
+            time = ans_q15_time)
+
+p1 <- ggplot(df1, aes(x= transport, y=time, fill = transport, text = paste0("transport: ", transport))) + 
+  geom_violin() +
+  scale_y_time() +
+  stat_summary(fun.y=mean, geom="point", shape=23, size=1, col = "black", fill = "black") +
+  scale_fill_manual(values= uq_palette) +
+  facet_wrap(. ~ day) +
+  theme_light() +
+  xlab("Travel mode [transport]") +
+  theme(axis.title.y=element_blank(),
+        legend.position = "none") +
+  ggtitle(label = "Fig.2 Time of visitor survey by transport mode")
+
+ggplotly(p1, tooltip = c( "text")) %>%
+  plotly::layout(yaxis = y)
+```
+
+### Fig. 3
 
 ```{r purpose}
 df1 <- intercept_survey %>%
@@ -1740,15 +1905,16 @@ p1 <- ggplot(df1, aes(x=transport, y = temp, fill = transport,
   facet_grid(var ~ day) +
   theme(legend.position = "none") + 
   scale_fill_manual(values= uq_palette) +
-  ylab("") +
-  xlab("") +
+  ylab("Visit Purpose") +
+  xlab("Transport Mode") +
   ylim(0,80) +
-  guides(fill=FALSE)
+  guides(fill=FALSE) +
+  ggtitle(label = "Fig.3 Visit purpose by transport mode")
 
 ggplotly(p1, tooltip = 'text')
 ```
 
-### Visitor Distance
+### Fig. 4
 
 ```{r distance}
 #for some reason, chunk captions cause the graphs to flatten
@@ -1775,13 +1941,14 @@ p1 <- ggplot(df1, aes(x= transport, y=km, fill = transport, text = paste0("trans
   theme_light() +
   xlab("Travel mode [transport]") +
   theme(axis.title.y=element_blank(),
-        legend.position = "none")
+        legend.position = "none") +
+  ggtitle(label = "Fig.4 Distance of travel by transport mode")
 
 ggplotly(p1, tooltip = c('km', "text")) %>%
   plotly::layout(yaxis = y)
 ```
 
-### Visitor Stay
+### Fig. 5
 
 ```{r duration}
 f <- list(
@@ -1790,7 +1957,7 @@ f <- list(
   color = "black"
 )
 y <- list(
-  title = "Visit stay [mins]",
+  title = "Visit duration [mins]",
   titlefont = f
 )
 
@@ -1807,13 +1974,14 @@ p1 <- ggplot(df1, aes(x= transport, y=mins, fill = transport, text = paste0("tra
   theme_light() +
   xlab("Travel mode [transport]") +
   theme(axis.title.y=element_blank(),
-        legend.position = "none")
+        legend.position = "none")  +
+  ggtitle(label = "Fig. 5 Duration of visit by transport mode")
 
 ggplotly(p1, tooltip = c("mins", "text")) %>%
   plotly::layout(yaxis = y)
 ```
 
-### Visitor Spending
+### Fig. 6
 
 ```{r spending}
 f <- list(
@@ -1839,13 +2007,14 @@ p1 <- ggplot(df1, aes(x= transport, y=aud, fill = transport, text = paste0("tran
   theme_light() +
   xlab("Travel mode [transport]") +
   theme(axis.title.y=element_blank(),
-        legend.position = "none")
+        legend.position = "none")  +
+  ggtitle(label = "Fig.6 Visit spending by transport mode")
 
 ggplotly(p1, tooltip = c("aud", "text")) %>%
   plotly::layout(yaxis = y)
 ```
 
-### Visitor Perceptions
+### Fig. 7
 
 ```{r perception}
 f <- list(
@@ -1854,7 +2023,7 @@ f <- list(
   color = "black"
 )
 y <- list(
-  title = "Perceived arriving by car [%]",
+  title = "Arrive by car estimate [%]",
   titlefont = f
 )
 
@@ -1871,68 +2040,14 @@ p1 <- ggplot(df1, aes(x= transport, y=percent, fill = transport, text = paste0("
   theme_light() +
   xlab("Travel mode [transport]") +
   theme(axis.title.y=element_blank(),
-        legend.position = "none")
+        legend.position = "none")  +
+  ggtitle(label = "Fig. 7 Arriving by car estimate by transport mode")
 
 ggplotly(p1, tooltip = c("percent", "text")) %>%
   plotly::layout(yaxis = y)
 ```
 
-```{r bubbles_test, include=FALSE}
-f <- list(
-  family = "Arial",
-  size = 15,
-  color = "black"
-)
-y <- list(
-  title = "Perceived arriving by car [%]",
-  titlefont = f
-)
-
-df1 <- intercept_survey %>% 
-  transmute(day,
-            transport = as.numeric(mode),
-            label = mode,
-            km = distance,
-            mins = ans_q6_duration,
-            aud = ans_q7_spending,
-            percent = ans_q12_perceived_drove_percent)
-
-df1 <- rbind(df1 %>% 
-               mutate(data = "respondent"),
-             df1 %>%
-               group_by(transport, label, day) %>%
-               summarise(km = round(mean(km, na.rm = TRUE), 1),
-                         mins = round(mean(mins, na.rm = TRUE), 1),
-                         aud = round(mean(aud, na.rm = TRUE), 1),
-                         percent = round(mean(percent, na.rm = TRUE), 1)) %>%
-               ungroup() %>% 
-               mutate(data = "mean")) %>% 
-  mutate(data = factor(data, levels = c("respondent", "mean")),
-         random = runif(1:n(), min = -0.4, max = 0.4),
-         transport = ifelse(data == "mean", transport, transport + random))
-
-p1 <- ggplot(df1, aes(x= transport, y=percent, color = label, shape = data, order = data,
-                      text = paste('data: ', data, '\n',
-                        'transport (mode): ', label, '\n',
-                                   'distance (km): ', km, '\n',
-                                   'duration (mins): ', mins , '\n',
-                                   'spending (AUD): ', aud, '\n',
-                                   'perceived arrival by car (%): ', percent))) + 
-  geom_point(aes(x= transport, y=percent, size = 4, )) +
-  scale_color_manual(values= alpha(uq_palette, 0.7)) +
-  scale_shape_manual(values= c(1, 18)) +
-  facet_wrap(. ~ day) +
-  theme_light() +
-  xlab("Transport [mode]") +
-  theme(axis.title.y=element_blank(),
-        axis.text.x = element_blank(),
-        legend.position = "none") +
-  scale_x_discrete()
-
-ggplotly(p1, tooltip = c("text")) %>% plotly::layout(yaxis = y)
-```
-
-### Parking Demand
+### Fig. 8
 
 ```{r licence plates, fig.height="100%"}
 df1 <- licence_plates_df %>%
@@ -1969,12 +2084,13 @@ p1 <- ggplot(df1, aes(x = time, fill = sign)) +
   geom_hline(yintercept=54*0.8, linetype = "dashed") +
    geom_text(aes(x = 0, y= 55*0.8, label = "80%"), nudge_x = 20) +
   geom_hline(yintercept=54*0.5, linetype = "dotted") +
-   geom_text(aes(x = 0, y = 55*0.5, label = "50%"), nudge_x = 20)
+   geom_text(aes(x = 0, y = 55*0.5, label = "50%"), nudge_x = 20) +
+  ggtitle(label = "Fig. 8 Parking occupancy by parking restriction")
   
 ggplotly(p1, tooltip = c('count')) 
 ```
 
-### Parking Turnover
+### Fig. 9
 
 ```{r parking_period}
 f <- list(
@@ -2021,13 +2137,14 @@ p1 <- ggplot(df1, aes(x= end, y=bay, colour=sign)) +
   facet_wrap(. ~ day, shrink = TRUE, scales = "free_x") +
   theme_light() +
   xlab("Time [15min increments]") +
-  theme(axis.title.y=element_blank(), axis.text.y = element_blank())
+  theme(axis.title.y=element_blank(), axis.text.y = element_blank())  +
+  ggtitle(label = "Fig. 9 Parking period by parking restriction")
   
 ggplotly(p1, tooltip = 'text') %>%
   plotly::layout(yaxis = y)
 ```
 
-### Parking Catchment
+### Fig. 10
 
 ```{r parking_cachement}
 f <- list(
@@ -2069,7 +2186,8 @@ p1 <- ggplot(df1, aes(x= km, y= percent,  text = paste0(percent, "% of private t
   facet_wrap(. ~ day) +
   theme_light() +
   xlab("Network distance [km]") +
-  theme(axis.title.y=element_blank())
+  theme(axis.title.y=element_blank())  +
+  ggtitle(label = "Fig. 10 Parking occupancy by network distance driven")
 
 ggplotly(p1, tooltip = 'text') %>%
   plotly::layout(yaxis = y)
@@ -2082,9 +2200,9 @@ Column {data-width=1}
 
 <center><img src="../data/Westendboundary.jpg" width="100%"/> </center>
 
-<center><p><b><i>Boundary Street, West End (<a href="https://en.wikipedia.org/wiki/File:Westendboundary.jpg">Wikimedia</a>)</i></b></p></center>
+<center><p><b><i>Fig. 11 Boundary Street, West End (<a href="https://en.wikipedia.org/wiki/File:Westendboundary.jpg">Wikimedia</a>)</i></b></p></center>
 
-West End, a Brisbane inner city suburb, has multiple characteristics that make it an interesting case study in terms of parking. For instance, its population (9,500 residents) is wealthier and better educated relative to other suburbs throughout Brisbane, Queensland, and Australia on the whole (e.g. 46% of have a bachelor degree or higher compared to 22-23% in other suburbs). The suburb is located on a river peninsula with few entry and exit routes. The resultant traffic congestion may explain why this suburb has the highest rates of walking and cycling to work in Brisbane (e.g. 20% of workers reach their workplaces by active transport thus four times the Brisbane average). A compact land-use pattern and a location within two kilometres of the CBD are other explanations for high levels of active travel in this suburb. The local housing stock is also unique: it grew by nearly 50% in the last decade, which is more than twice the Brisbane average. In particular, the multifamily housing stock grew eleven times the Brisbane average. In addition, parking maximums (or caps) rather than traditional parking minimums apply for new residential development. This policy was predicated on public transport improvements, which have so far not materialized. This has left many residents parking-restricted yet auto-dependent or stranded along a redeveloped industrial riverfront. In combination, these characteristics have turned local parking supply into a hotly contested issue (Pojani and Sipe [2020](https://www.tandfonline.com/doi/full/10.1080/17549175.2020.1762112)).
+West End, a Brisbane inner city suburb, has multiple characteristics that make it an interesting case study in terms of parking (Fig. 11). For instance, its population (9,500 residents) is wealthier and better educated relative to other suburbs throughout Brisbane, Queensland, and Australia on the whole (e.g. 46% of have a bachelor degree or higher compared to 22-23% in other suburbs). The suburb is located on a river peninsula with few entry and exit routes. The resultant traffic congestion may explain why this suburb has the highest rates of walking and cycling to work in Brisbane (e.g. 20% of workers reach their workplaces by active transport thus four times the Brisbane average). A compact land-use pattern and a location within two kilometres of the CBD are other explanations for high levels of active travel in this suburb. The local housing stock is also unique: it grew by nearly 50% in the last decade, which is more than twice the Brisbane average. In particular, the multifamily housing stock grew eleven times the Brisbane average. In addition, parking maximums (or caps) rather than traditional parking minimums apply for new residential development. This policy was predicated on public transport improvements, which have so far not materialized. This has left many residents parking-restricted yet auto-dependent or stranded along a redeveloped industrial riverfront. In combination, these characteristics have turned local parking supply into a hotly contested issue (Pojani and Sipe [2020](https://www.tandfonline.com/doi/full/10.1080/17549175.2020.1762112)).
 
 <button class="accordion">Public Forum Narratives</button>
 <div class="panel">
@@ -2108,17 +2226,19 @@ See Pojani and Sipe ([2020](https://www.tandfonline.com/doi/full/10.1080/1754917
 <div class="panel">
 <p></p>
 
-Drawing upon the discussions with West End traders and residents during the public forum, an intercept survey was developed to reveal: how visitors reach Boundary Street; why this modal choice is preferred; where they reside; their employment status and profession; the purpose(s) of their visit; how much they are spending; their age and gender; and how they perceive other visitors are reaching Boundary Street. Further, when they were surveyed between 7am and 9pm were recorded examining how visits vary throughout the day, and whether it was Wednesday the 7th of October or Saturday the 10th of October given that public forum participants indicated that parking is a particularly contentious issue on Saturdays when large numbers visit the nearby [Davies Park Markets](https://daviesparkmarket.com.au/).
+Drawing upon the discussions with West End traders and residents during the public forum, an intercept survey was developed to reveal: how visitors reach Boundary Street; why this modal choice is preferred; where they reside; their employment status and profession; the purpose(s) of their visit; how much they are spending; their age and gender; and how they perceive other visitors are reaching Boundary Street case study area (Fig. 1). Further, when they were surveyed between 7am and 9pm were recorded examining how visits vary throughout the day, and whether it was Wednesday the 7th of October or Saturday the 10th of October given that public forum participants indicated that parking is a particularly contentious issue on Saturdays when large numbers visit the nearby [Davies Park Markets](https://daviesparkmarket.com.au/).
 
-As to be expected, Boundary Street visitors arriving by active transport (i.e. walking or cycling) on a weekday travelled 1.4 kilometres on average relative to 5.5 for those arriving by public transport (i.e. multimodal travel that includes, busses, trains, or a ferry), 8.2 kilometres for those arriving by private transport (i.e. car, motorbike, taxi or Uber). Interestingly, some active transport visitors travelled 19 kilometres to Boundary Street yet most still resided within the West End peninsular. Contrasting Wednesday to Saturday also revealed novel insights including that both active and public transport visitors were traveling shorter distances on average on Saturdays—0.9 and 3.8 kilometres respectively—while the average distance for private transport visitors more than doubled to 19.7 kilometres in part attributable to visitors driving 123 kilometres to visit Boundary Street on a Saturday.
+On the Wednesday, Boundary Street visitors generally arrived by active or public transport prior to 11am whereas visitors arriving by private transport started later at around 11am before declining by 3pm (Fig. 2) with qualitative survey responses indicating that some visitors were visiting prior to collecting their children from West End State School. Likewise, there was a was a rise in visitors arriving by active transport around 3pm although this peaked slightly later suggesting that active transport users were generally visiting after collecting their children rather than before. Visitors arriving by public transport peaked early afternoon from 4pm until 5pm whereas visitors arriving by private transport exhibited a further peak from 7pm until 8pm suggesting they were arriving for dining. Saturday in contrast, visitors arriving by active or private transport were relatively uniform throughout the day while visitors arriving by public transport were strongly concentrated around 3pm and rising once more around 9pm when the survey collection period concluded. Combined, these findings suggest that Boundary Street visitation on weekdays is largely orientated around school schedules whereas visitation by public transport on Saturdays is largely orientated around visiting bars and pubs and so thankfully could be minimising intoxicated driving. Notably, arrivals by Uber or taxi were uncommon and so aggregated into "private transport". As such, there is the possibility that arriving by Uber or taxi became more commonplace during these periods.     
 
-Contrasting the duration of visitor stays by modal choice and day reveals that active transport visitors remain 88.9 minutes on average on Wednesdays but longer at 114.3 minutes on average on Saturdays. In contrast, public transport visitors remain 183.1 minutes on average on Wednesdays but shorter at 130.0 minutes on Saturdays. Similar to active transport visitors, private transport visitors stay for longer on average on Saturdays relative to Wednesdays (i.e. 121.3 and 145.5 minutes respectively). Skewness is a further similarity between active and private transport given that the majority are visiting for shorter periods, while there is greater variation between public transport visitors on both days.
+Next, the purpose for visiting Boundary Street is examined and reveals novel findings (Fig. 3). For instance, only 6.2% of public transport visitors were visiting Boundary Street for dining on Wednesday relative to 25.0% of active transport and 36.7% of private transport visitors. By Saturday, there was a similar increase across all travel modes with 25.0% of public transport visitors, 59.1% of active transport visitors, and 60.7% of private transport visitors dining along Boundary Street. Visitors stopping at Boundary Street on their way to somewhere else ranged between 10.0% to 12.5% across all three transport modes, and the only notable distinction between days was that no private transport visitors indicated that they were passing through on Saturday thus suggesting that Boundary Street was their final destination for this visit. On Wednesday, 6.7% of active transport visitors, 12.5% of public transport visitors, and 26.7% of active transport visitors were at Boundary Street to access services, and these figures all dropped to 5.4% or less by Saturday. Interestingly, just 13.3% of private transport visitors arrived for shopping on Wednesday, while 30.0% of active transport and 43.8% of public transport visitors arrived for this purpose. By Saturday, this figure increased to 31.8% or more across the three modes suggesting there is less variation on Saturdays and therefore parking availability has less impact on this day. Amongst the three modes, public transport visitors were the most likely to include working amongst their purposes for visiting Boundary St with 31.2% on Wednesday and 12.5% by Saturday. In sum, the clearest distinction between modal choices was visitors are unlikely to arrive by public transport when they intend to dine, and that the remaining purposes are similar across active and private transport visitors thus parking could be a weaker determinant than previously assumed.
 
-Unlike the perceptions of traders revealed during the public forum, average visitor spending on Wednesdays was similar for all transport modes with given that active transport visitors spend AUD24.10 on average, public transport visitors AUD24.20, and private transport visitors AUD22.60. On Saturdays, visitor spending near doubled with active transport visitors spending AUD40.50 on average and public transport visitors AUD43.10, while private transport visitors spending more than tripled at AUD68.90 on average. This later finding suggests that parking availability is particularly critical for traders during Saturdays.
+As to be expected (Fig. 4), Boundary Street visitors arriving by active transport (i.e., walking or cycling) on a weekday travelled 1.4 kilometres on average relative to 5.5 for those arriving by public transport (i.e. multimodal travel that includes, buses, trains, or a ferry), 8.2 kilometres for those arriving by private transport (i.e. car, motorbike, taxi or Uber). Interestingly, some active transport visitors travelled 19 kilometres to Boundary Street yet most still resided within the West End peninsular. Contrasting Wednesday to Saturday also revealed novel insights including that both active and public transport visitors were travelling shorter distances on average on Saturdays—0.9 and 3.8 kilometres respectively—while the average distance for private transport visitors more than doubled to 19.7 kilometres in part attributable to visitors driving 123 kilometres to visit Boundary Street on a Saturday.
 
-Given that perceptions of how visitors reach Boundary Street varied considerably between interest groups during the public forum, these perceptions are contrasted by modal choice and day. While private transport visitors perceive that greater numbers of Boundary Street visitors are arriving by car at 47.3% on average, active and public transport visitors share similar perceptions at 46.6% and 45.7% respectively, and it is notable that private transport visitors have a bimodal distribution thus suggesting that there could be a distinction within this grouping. Greater variation occurs on Saturday when public transport visitors perceive that 58.3% of other Boundary Street visitors are arriving by car, which potentially explains their decision to use public rather than private transport on this day.
+Contrasting the duration of visitor stays by modal choice and day (Fig. 5) reveals that active transport visitors remain 88.9 minutes on average on Wednesdays but longer at 114.3 minutes on average on Saturdays. In contrast, public transport visitors remain 183.1 minutes on average on Wednesdays but shorter at 130.0 minutes on Saturdays. Similar to active transport visitors, private transport visitors stay for longer on average on Saturdays relative to Wednesdays (i.e. 121.3 and 145.5 minutes respectively). Skewness is a further similarity between active and private transport given that the majority are visiting for shorter periods, while there is greater variation between public transport visitors on both days.
 
-The purpose for visiting Boundary Street also reveals novel findings. For instance, only 6.2% of public transport visitors were visiting Boundary Street for dining on Wednesday relative to 25.0% of active transport and 36.7% of private transport visitors. By Saturday, there was a similar increase across all travel modes with 25.0% of public transport visitors, 59.1% of active transport visitors, and 60.7% of private transport visitors dining along Boundary Street. Visitors stopping at Boundary Street on their way to somewhere else ranged between 10.0% to 12.5% across all three transport modes, and the only notable distinction between days was that no private transport visitors indicated that they were passing through on Saturday thus suggesting that Boundary Street was their final destination for this visit. On Wednesday, 6.7% of active transport visitors, 12.5% of public transport visitors, and 26.7% of active transport visitors were at Boundary Street to access services, and these figures all dropped to 5.4% or less by Saturday. Interestingly, just 13.3% of private transport visitors arrived for shopping on Wednesday, while 30.0% of active transport and 43.8% of public transport visitors arrived for this purpose. By Saturday, this figure increased to 31.8% or more across the three modes suggesting there is less variation on Saturdays and therefore parking availability has less impact on this day. Amongst the three modes, public transport visitors were the most likely to include working amongst their purposes for visiting Boundary St with 31.2% on Wednesday and 12.5% by Saturday. In sum, the clearest distinction between modal choices was visitors are unlikely to arrive by public transport when they intend to dine, and that the remaining purposes are similar across active and private transport visitors thus parking could be a weaker determinant than previously assumed. 
+Unlike the perceptions of traders revealed during the public forum, average visitor spending on Wednesdays was similar for all transport modes with given that active transport visitors spend AUD24.10 on average, public transport visitors AUD24.20, and private transport visitors AUD22.60 (Fig. 6). On Saturdays, visitor spending near doubled with active transport visitors spending AUD40.50 on average and public transport visitors AUD43.10, while private transport visitors spending more than tripled at AUD68.90 on average. This later finding suggests that parking availability is particularly critical for traders during Saturdays.
+
+Given that perceptions of how visitors reach Boundary Street varied considerably between interest groups during the public forum, these perceptions are contrasted by modal choice and day (Fig. 6). While private transport visitors perceive that greater numbers of Boundary Street visitors are arriving by car at 47.3% on average, active and public transport visitors share similar perceptions at 46.6% and 45.7% respectively, and it is notable that private transport visitors have a bimodal distribution thus suggesting that there could be a distinction within this grouping. Greater variation occurs on Saturday when public transport visitors perceive that 58.3% of other Boundary Street visitors are arriving by car, which potentially explains their decision to use public rather than private transport on this day.
 
 <p></p>
 </div>
@@ -2127,15 +2247,15 @@ The purpose for visiting Boundary Street also reveals novel findings. For instan
 <div class="panel">
 <p></p>
 
-During the public forum, a common perception amongst West End traders was that an undersupply of on street parking was responsible for declining trade, and that local residents were shopping in other suburbs to avoid extended periods of cruising for parking. Another common perception amongst the traders was that this limited parking supply was being exhausted for extended periods by neighbouring yet downstream suburbs treating West End as an informal park `n’ ride given that there are frequent public transport services travelling along a relatively direct route towards the Brisbane CBD. As such, an observation survey was developed to record car licence plates in 15 minute intervals from 7am until 9pm on Wednesday the 7th of October and Saturday the 10th of October. To keep the anonymity of the vehicle owners, a lookup table was generated for the Department of Transport and Main Roads that included Queensland *postcodes* and the *network distance* from Boundary Street to the centroid of the postcode area in question. In turn, this department looked up the postcodes associated with the licence plates and returned just the *licence plate* and the *network distance* so that all that could be determined about the vehicle owners is the distance they traveled to Boundary Street, their time of arrival and departure, and the parking restrictions in place.
+During the public forum, a common perception amongst West End traders was that an under-supply of on street parking was responsible for declining trade, and that local residents were shopping in other suburbs to avoid extended periods of cruising for parking. Another common perception amongst the traders was that this limited parking supply was being exhausted for extended periods by neighbouring yet downstream suburbs treating West End as an informal park `n’ ride given that there are frequent public transport services travelling along a relatively direct route towards the Brisbane CBD. As such, an observation survey was developed to record car licence plates in 15 minute intervals from 7am until 9pm on Wednesday the 7th of October and Saturday the 10th of October. To keep the anonymity of the vehicle owners, a lookup table was generated for the Department of Transport and Main Roads that included Queensland *postcodes* and the *network distance* from Boundary Street to the centroid of the postcode area in question. In turn, this department looked up the postcodes associated with the licence plates and returned just the *licence plate* and the *network distance* so that all that could be determined about the vehicle owners is the distance they traveled to Boundary Street, their time of arrival and departure, and the parking restrictions in place.
 
-For capturing *parking demand*, 54 on street parking bays observed. Parking demand peaked at 18:15 on Wednesday by reaching 70% of maximum capacity, and at 21:15 on Saturday by reaching 81% of maximum capacity. Across the Wednesday, parking demand typically remained below 50% of parking capacity except from 10:45 until 13:45, and after 18:15 thus suggesting dining is a key influence. In contrast, parking demand typically remained above 50% of parking capacity on Saturday from 7:30 onwards and only dipping below from 16:30 until 17:00 thus suggesting that dining again has a key influence over parking demand, and that breakfast dining exerts a stronger influence on Saturdays. Notably, parking demand never reached parking capacity and only reached 80% briefly on Saturday, which is particularly interesting threshold given *dynamic parking systems* (e.g., SFPark) are typically calibrated to ensure that 20% of parking on a street remains vacant to minimise cruising for parking. 
+For capturing *parking demand*, 54 on street parking bays observed (Fig. 8). Parking demand peaked at 18:15 on Wednesday by reaching 70% of maximum capacity, and at 21:15 on Saturday by reaching 81% of maximum capacity. Across the Wednesday, parking demand typically remained below 50% of parking capacity except from 10:45 until 13:45, and after 18:15 thus suggesting dining is a key influence. In contrast, parking demand typically remained above 50% of parking capacity on Saturday from 7:30 onwards and only dipping below from 16:30 until 17:00 thus suggesting that dining again has a key influence over parking demand, and that breakfast dining exerts a stronger influence on Saturdays. Notably, parking demand never reached parking capacity and only reached 80% briefly on Saturday, which is particularly interesting threshold given *dynamic parking systems* (e.g., SFPark) are typically calibrated to ensure that 20% of parking on a street remains vacant to minimise cruising for parking. 
 
-For observing *parking turnover*, a barbell graph was used where a solid circle indicates a new licence plate within a parking bay and an solid circle indicates the last recording of a licence plate. 27 out of 242 vehicles parked at a ¼P sign remained longer than 15minutes on Wednesday with one remaining for 4.5 hours, and 8 out of 40 on Saturday with one vehicle remaining for 2.5 hours. While 13 out of 55 vehicles parked where P10 bays were remained present for more than 15minutes on Wednesday and 18 out of 57 on Saturday, it is notable that turnover occurred at a higher rate at these unmetered bays and the longest stay on Wednesday was 45minutes on Wednesday and 1hour on Saturday thus suggesting these unmetered P10 restrictions are proving more effective than the metered ¼P restrictions as in terms of increasing parking turnover. Also, 13 out of 56 vehicles parked at unmetered 1/2P signs on Wednesday remained at least 45minutes and 39 out of 153 on Saturday so while these findings suggest these signs are relatively ineffective for encouraging short stays and high parking turnover, it is notable that these signs only apply outside of the general workday period thus could represent distinct purposes for visits such as primarily visiting for dining.
+For observing *parking turnover*, a barbell graph was used where a solid circle indicates a new licence plate within a parking bay and an solid circle indicates the last recording of a licence plate (Fig. 9). 27 out of 242 vehicles parked at a ¼P sign remained longer than 15minutes on Wednesday with one remaining for 4.5 hours, and 8 out of 40 on Saturday with one vehicle remaining for 2.5 hours. While 13 out of 55 vehicles parked where P10 bays were remained present for more than 15minutes on Wednesday and 18 out of 57 on Saturday, it is notable that turnover occurred at a higher rate at these un-metered bays and the longest stay on Wednesday was 45minutes on Wednesday and 1hour on Saturday thus suggesting these un-metered P10 restrictions are proving more effective than the metered ¼P restrictions as in terms of increasing parking turnover. Also, 13 out of 56 vehicles parked at un-metered 1/2P signs on Wednesday remained at least 45minutes and 39 out of 153 on Saturday so while these findings suggest these signs are relatively ineffective for encouraging short stays and high parking turnover, it is notable that these signs only apply outside of the general workday period thus could represent distinct purposes for visits such as primarily visiting for dining.
 
-Next examining parking bays with a 2hour maximum stay, 10 out of 236 parked at meters on Wednesday remained beyond the 2hours with one instance first observed at 7am and remained for 7.5 hours, and 6 out of 40 on Saturday with one instance first observed at 7am and remained until 10hours. Like the unmetered 1/P restriction, the unmetered 2P restriction was in place outside of the general workday with 5 out of 64 remaining parked beyond the maximum stay period on Wednesday with the longest remaining from 6pm until the last recording at 8:45pm, and 16 out of 172 on Saturday with the longest remaining 8.5hours. In contrast to the shorter stay parking restrictions, there is less distinction between metered and unmetered parking regarding parking turnover and exceeding the maximum duration.  
+Next examining parking bays with a 2hour maximum stay, 10 out of 236 parked at meters on Wednesday remained beyond the 2hours with one instance first observed at 7am and remained for 7.5 hours, and 6 out of 40 on Saturday with one instance first observed at 7am and remained until 10hours. Like the un-metered 1/P restriction, the un-metered 2P restriction was in place outside of the general workday with 5 out of 64 remaining parked beyond the maximum stay period on Wednesday with the longest remaining from 6pm until the last recording at 8:45pm, and 16 out of 172 on Saturday with the longest remaining 8.5hours. In contrast to the shorter stay parking restrictions, there is less distinction between metered and un-metered parking regarding parking turnover and exceeding the maximum duration.  
 
-To interpret *parking catchments* areas as discussed during the pubic forum, it is important to distinguish the *local community* apart from *extra-local visitors*. As such, those residing within 2km of Boundary Street are defined as members of the local community given that this range encloses the West End peninsular. Notably, 26% of the parked vehicles on Wednesday and 28% on Saturday were owned by members of this local community. Although those attending public forum indicated that their parking was being exhausted by members of neighbouring and downstream suburbs such Dutton Park and Annerley treating their suburb as an informal park `n’ ride, this is unlikely to be the case given that just 6% on Wednesday and 4% on Saturday resided within 2 to 4 kilometres of Boundary Street, which includes these areas. Instead, community outsiders were typically driving between 8 to 32 km to reach Boundary Street. This range encloses the greater metropolitan area, and spans past the coast in the east and the City of Logan in the south, and almost reaches the cities of Ipswich in the West and Redcliff in the North. Last, it is notable that while parking demand increased on Saturday, the catchment areas were similar for Wednesday and Saturday thus suggesting a similar profile of visitors on weekdays and weekends. 
+To interpret *parking catchments* areas as discussed during the pubic forum, it is important to distinguish the *local community* apart from *extra-local visitors*. While TMR is unable to provide the postcodes of vehicle registration out of privacy concerns, it has been possible to aggregate postcodes to network distance the motorist would need to travel thus each column represents road network catchment area and those residing within 2km of Boundary Street shall be regarded as members of the *local community* given that this range encloses the West End peninsular (Fig. 10). Notably, 26% of the parked vehicles on Wednesday and 28% on Saturday were owned by members of this local community. Although those attending public forum indicated that their parking was being exhausted by members of neighbouring and downstream suburbs such Dutton Park and Annerley treating their suburb as an informal park `n’ ride, this is unlikely to be the case given that just 6% on Wednesday and 4% on Saturday resided within 2 to 4 kilometres of Boundary Street, which includes these areas. Instead, community outsiders were typically driving between 8 to 32 km to reach Boundary Street. This range encloses the greater metropolitan area, and spans past the coast in the east and the City of Logan in the south, and almost reaches the cities of Ipswich in the West and Redcliff in the North. Last, it is notable that while parking demand increased on Saturday, the catchment areas were similar for Wednesday and Saturday thus suggesting a similar profile of visitors on weekdays and weekends. 
 
 <p></p>
 </div>
