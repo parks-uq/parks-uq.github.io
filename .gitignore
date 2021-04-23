@@ -42,4 +42,7 @@ vignettes/*.pdf
 analysis/
 data/
 output/
+
+# Files to ignore
+executive_summary_slides.pptx 
 src/2-clean201233b.R
