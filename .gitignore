@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Directories to ignore
+analysis/
+data/
+output/
+src/2-clean201233b.R
